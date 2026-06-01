@@ -200,6 +200,58 @@
         ]
       },
       "path": "~/titlescreen"
+    },
+    {
+      "name": "Windowshaketest",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windowshaketest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/WindowshaketestCommand.java"
+        ]
+      },
+      "path": "~/testing"
+    },
+    {
+      "name": "Shaketestscreen",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shaketestscreen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/ShaketestscreenCommand.java"
+        ]
+      },
+      "path": "~/testing"
+    },
+    {
+      "name": "Popuptabstest",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popuptabstest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/PopuptabstestCommand.java"
+        ]
+      },
+      "path": "~/testing"
+    },
+    {
+      "name": "Voidspawnstructuretest",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidspawnstructuretest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/VoidspawnstructuretestCommand.java"
+        ]
+      },
+      "path": "~/testing"
     }
   ],
   "variable_elements": [],
@@ -245,6 +297,10 @@
       },
       {
         "name": "Events",
+        "children": []
+      },
+      {
+        "name": "testing",
         "children": []
       }
     ]
