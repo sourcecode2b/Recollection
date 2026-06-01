@@ -8,11 +8,11 @@
       "registry_name": "voide",
       "metadata": {
         "files": [
-          "src/main/resources/assets/recollection/models/item/voide.json",
-          "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
           "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
+          "src/main/resources/assets/recollection/models/block/voide.json",
           "src/main/resources/assets/recollection/blockstates/voide.json",
-          "src/main/resources/assets/recollection/models/block/voide.json"
+          "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
+          "src/main/resources/assets/recollection/models/item/voide.json"
         ]
       },
       "path": "~/Blocks"
@@ -418,6 +418,54 @@
         "files": []
       },
       "path": "~/GracePeriod"
+    },
+    {
+      "name": "Collected",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "collected",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/block/CollectedBlock.java",
+          "src/main/resources/data/recollection/loot_tables/blocks/collected.json",
+          "src/main/resources/assets/recollection/models/item/collected.json",
+          "src/main/resources/assets/recollection/blockstates/collected.json",
+          "src/main/resources/assets/recollection/models/block/collected.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Spawnvcollectedportal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnvcollectedportal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/SpawnvcollectedportalProcedure.java"
+        ]
+      },
+      "path": "~/Events"
     }
   ],
   "variable_elements": [
@@ -458,7 +506,8 @@
       "gui.recollection.titlescreen_8.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
       "gui.recollection.titlescreen_9.label_leave_the_game": "THE COLLECTION KILLED US ALL",
       "gamerule.graceful.description": "they welcome you",
-      "gamerule.graceful": "graceful"
+      "gamerule.graceful": "graceful",
+      "block.recollection.collected": "Collected"
     }
   },
   "metadata": {

@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "void",
+    "texture": "cicle",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -12,7 +12,7 @@
     "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animations": [],
     "itemTexture": "",
@@ -36,28 +36,24 @@
       }
     ],
     "customProperties": [],
-    "name": "Void",
+    "name": "Collected",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 0.0,
-    "resistance": 0.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:Recollection"
-      }
-    ],
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 0,
+    "dropAmount": 1,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
@@ -85,11 +81,11 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "IGNORE",
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "NYLIUM"
+      "value": "WART"
     },
     "breakSound": {
       "value": ""
@@ -106,7 +102,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 15,
+    "luminance": 0,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
