@@ -217,25 +217,6 @@
       "path": "~/WorldWarning"
     },
     {
-      "name": "ContinueButton",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "continue_button",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/recollection/procedures/ContinueButtonProcedure.java"
-        ]
-      },
-      "path": "~/WorldWarning"
-    },
-    {
       "name": "CancelLeave",
       "type": "procedure",
       "compiles": true,
@@ -267,6 +248,25 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "ContinueButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "continue_button",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/ContinueButtonProcedure.java"
+        ]
+      },
+      "path": "~/WorldWarning"
     },
     {
       "name": "Unknownactivityseenyesno",
@@ -302,6 +302,58 @@
         ]
       },
       "path": "~/WorldWarning"
+    },
+    {
+      "name": "Shaketestscreen",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shaketestscreen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/ShaketestscreenCommand.java"
+        ]
+      },
+      "path": "~/testing"
+    },
+    {
+      "name": "Popuptabstest",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popuptabstest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/PopuptabstestCommand.java"
+        ]
+      },
+      "path": "~/testing"
+    },
+    {
+      "name": "Windowshaketest",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windowshaketest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/WindowshaketestCommand.java"
+        ]
+      },
+      "path": "~/testing"
+    },
+    {
+      "name": "Voidspawnstructuretest",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidspawnstructuretest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/VoidspawnstructuretestCommand.java"
+        ]
+      },
+      "path": "~/testing"
     }
   ],
   "variable_elements": [
@@ -330,13 +382,9 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/recollection/RecollectionMod.java",
-      "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
-      "src/main/resources/META-INF/mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
-      "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/recollection/RecollectionMod.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
     ]
@@ -344,6 +392,10 @@
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "testing",
+        "children": []
+      },
       {
         "name": "titlescreen",
         "children": []
@@ -362,11 +414,11 @@
         "children": []
       },
       {
-        "name": "Events",
+        "name": "WorldWarning",
         "children": []
       },
       {
-        "name": "WorldWarning",
+        "name": "Events",
         "children": []
       }
     ]
