@@ -23,7 +23,7 @@
       }
     ],
     "baseTexture": "",
-    "overlayTarget": "Ingame",
+    "overlayTarget": "MainMenu",
     "displayCondition": {
       "name": "Titlescreenoverlayshow"
     },
