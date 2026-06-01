@@ -8,11 +8,11 @@
       "registry_name": "voide",
       "metadata": {
         "files": [
-          "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
-          "src/main/resources/assets/recollection/models/block/voide.json",
-          "src/main/resources/assets/recollection/blockstates/voide.json",
+          "src/main/resources/assets/recollection/models/item/voide.json",
           "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
-          "src/main/resources/assets/recollection/models/item/voide.json"
+          "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
+          "src/main/resources/assets/recollection/blockstates/voide.json",
+          "src/main/resources/assets/recollection/models/block/voide.json"
         ]
       },
       "path": "~/Blocks"
@@ -47,6 +47,105 @@
         ]
       },
       "path": "~/Events"
+    },
+    {
+      "name": "ScreenShakeHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "screen_shake_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/ScreenShakeHandler.java"
+        ]
+      },
+      "path": "~/Custom Code"
+    },
+    {
+      "name": "ScreenShakeTestCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screen_shake_test_command",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/ScreenShakeTestCommandProcedure.java"
+        ]
+      },
+      "path": "~/Custom Code/Example"
+    },
+    {
+      "name": "ScreenShakeCommand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "screen_shake_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/ScreenShakeCommandCommand.java"
+        ]
+      },
+      "path": "~/Custom Code/Example"
+    },
+    {
+      "name": "WindowShakeHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "window_shake_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/WindowShakeHandler.java"
+        ]
+      },
+      "path": "~/Custom Code"
+    },
+    {
+      "name": "WindowShakeTestCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "window_shake_test_command",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/WindowShakeTestCommandProcedure.java"
+        ]
+      },
+      "path": "~/Custom Code/Example"
+    },
+    {
+      "name": "WindowsMessageBox",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "windows_message_box",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/WindowsMessageBox.java"
+        ]
+      },
+      "path": "~/Custom Code"
+    },
+    {
+      "name": "WindowsMessageBoxTestCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windows_message_box_test_command",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/WindowsMessageBoxTestCommandProcedure.java"
+        ]
+      },
+      "path": "~/Custom Code/Example"
     }
   ],
   "variable_elements": [],
@@ -77,6 +176,15 @@
       {
         "name": "Blocks",
         "children": []
+      },
+      {
+        "name": "Custom Code",
+        "children": [
+          {
+            "name": "Example",
+            "children": []
+          }
+        ]
       }
     ]
   },
