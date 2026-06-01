@@ -1,8 +1,23 @@
 package net.mcreator.recollection.network;
 
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.recollection.procedures.ContinueButtonProcedure;
+import net.mcreator.recollection.procedures.CancelLeaveProcedure;
+import net.mcreator.recollection.RecollectionMod;
+
+import java.util.function.Supplier;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class UnknownActivityButtonMessage {
-
 	private final int buttonID, x, y, z;
 
 	public UnknownActivityButtonMessage(FriendlyByteBuf buffer) {
@@ -34,7 +49,6 @@ public class UnknownActivityButtonMessage {
 			int x = message.x;
 			int y = message.y;
 			int z = message.z;
-
 			handleButtonAction(entity, buttonID, x, y, z);
 		});
 		context.setPacketHandled(true);
@@ -42,16 +56,21 @@ public class UnknownActivityButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
 
+			CancelLeaveProcedure.execute(world, entity);
+		}
+		if (buttonID == 1) {
+
+			ContinueButtonProcedure.execute(entity);
+		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		RecollectionMod.addNetworkMessage(UnknownActivityButtonMessage.class, UnknownActivityButtonMessage::buffer, UnknownActivityButtonMessage::new, UnknownActivityButtonMessage::handler);
 	}
-
 }

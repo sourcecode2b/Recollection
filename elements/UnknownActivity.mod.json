@@ -125,9 +125,6 @@
         }
       }
     ],
-    "onClosed": {
-      "name": "Unknownactivityseenyesno"
-    },
     "gridSettings": {
       "sx": 16,
       "sy": 18,

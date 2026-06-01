@@ -219,7 +219,7 @@
     {
       "name": "CancelLeave",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cancel_leave",
       "metadata": {
@@ -252,7 +252,7 @@
     {
       "name": "ContinueButton",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "continue_button",
       "metadata": {
@@ -269,44 +269,9 @@
       "path": "~/WorldWarning"
     },
     {
-      "name": "Unknownactivityseenyesno",
-      "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "unknownactivityseenyesno",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/recollection/procedures/UnknownactivityseenyesnoProcedure.java"
-        ]
-      },
-      "path": "~/WorldWarning"
-    },
-    {
       "name": "Shaketestscreen",
       "type": "command",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "shaketestscreen",
       "metadata": {
@@ -319,7 +284,7 @@
     {
       "name": "Popuptabstest",
       "type": "command",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "popuptabstest",
       "metadata": {
@@ -332,7 +297,7 @@
     {
       "name": "Windowshaketest",
       "type": "command",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "windowshaketest",
       "metadata": {
@@ -345,7 +310,7 @@
     {
       "name": "Voidspawnstructuretest",
       "type": "command",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "voidspawnstructuretest",
       "metadata": {
