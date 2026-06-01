@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "recollection:block/void",
+    "up": "recollection:block/void",
+    "north": "recollection:block/void",
+    "east": "recollection:block/void",
+    "south": "recollection:block/void",
+    "west": "recollection:block/void",
+    "particle": "recollection:block/void"
+  },
+  "render_type": "solid"
+}
