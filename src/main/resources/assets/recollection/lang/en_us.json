@@ -3,5 +3,11 @@
   "gui.recollection.titlescreen_2.label_leave_the_game": "THE COLLECTION KILLED US ALL",
   "gui.recollection.titlescreen_3.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
   "gui.recollection.titlescreenone.label_leave_the_game": "LEAVE THE GAME",
-  "gui.recollection.titlescreen_4.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --"
+  "gui.recollection.titlescreen_4.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
+  "gui.recollection.unknown_activity.label_empty": "Unknown Activity found in this world",
+  "gui.recollection.unknown_activity.button_proceed": "Proceed..?",
+  "gui.recollection.unknown_activity.label_is_it_true_you_wish_to_proceed": "Is it true you wish to proceed?",
+  "gui.recollection.unknown_activity.button_cancel": "Cancel",
+  "item_group.recollection.recollection": "Recollection",
+  "gui.recollection.titlescreen_4.label_save_us": "save us"
 }
