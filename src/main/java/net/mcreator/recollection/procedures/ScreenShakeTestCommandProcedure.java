@@ -1,6 +1,6 @@
 package net.mcreator.recollection.procedures;
 
-import net.mcreator.recollection.ScreenShakeHandler;
+import net.minecraftforge.eventbus.api.Event;
 
 public class ScreenShakeTestCommandProcedure {
 	public static void execute() {

@@ -1,6 +1,6 @@
 package net.mcreator.recollection.procedures;
 
-import net.mcreator.recollection.WindowShakeHandler;
+import net.minecraftforge.eventbus.api.Event;
 
 public class WindowShakeTestCommandProcedure {
 	public static void execute() {

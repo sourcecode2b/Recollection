@@ -8,11 +8,11 @@
       "registry_name": "voide",
       "metadata": {
         "files": [
-          "src/main/resources/assets/recollection/models/item/voide.json",
-          "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
           "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
+          "src/main/resources/assets/recollection/models/block/voide.json",
           "src/main/resources/assets/recollection/blockstates/voide.json",
-          "src/main/resources/assets/recollection/models/block/voide.json"
+          "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
+          "src/main/resources/assets/recollection/models/item/voide.json"
         ]
       },
       "path": "~/Blocks"
@@ -49,31 +49,17 @@
       "path": "~/Events"
     },
     {
-      "name": "ScreenShakeHandler",
+      "name": "WindowsMessageBox",
       "type": "code",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "screen_shake_handler",
+      "registry_name": "windows_message_box",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/ScreenShakeHandler.java"
+          "src/main/java/net/mcreator/recollection/WindowsMessageBox.java"
         ]
       },
       "path": "~/Custom Code"
-    },
-    {
-      "name": "ScreenShakeTestCommand",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "screen_shake_test_command",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/recollection/procedures/ScreenShakeTestCommandProcedure.java"
-        ]
-      },
-      "path": "~/Custom Code/Example"
     },
     {
       "name": "ScreenShakeCommand",
@@ -89,14 +75,14 @@
       "path": "~/Custom Code/Example"
     },
     {
-      "name": "WindowShakeHandler",
+      "name": "ScreenShakeHandler",
       "type": "code",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "window_shake_handler",
+      "registry_name": "screen_shake_handler",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/WindowShakeHandler.java"
+          "src/main/java/net/mcreator/recollection/ScreenShakeHandler.java"
         ]
       },
       "path": "~/Custom Code"
@@ -116,17 +102,31 @@
       "path": "~/Custom Code/Example"
     },
     {
-      "name": "WindowsMessageBox",
+      "name": "WindowShakeHandler",
       "type": "code",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "windows_message_box",
+      "registry_name": "window_shake_handler",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/WindowsMessageBox.java"
+          "src/main/java/net/mcreator/recollection/WindowShakeHandler.java"
         ]
       },
       "path": "~/Custom Code"
+    },
+    {
+      "name": "ScreenShakeTestCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screen_shake_test_command",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/ScreenShakeTestCommandProcedure.java"
+        ]
+      },
+      "path": "~/Custom Code/Example"
     },
     {
       "name": "WindowsMessageBoxTestCommand",
@@ -146,6 +146,60 @@
         ]
       },
       "path": "~/Custom Code/Example"
+    },
+    {
+      "name": "Titlescreen2",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen2Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen3",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen3Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreenone",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreenone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/TitlescreenoneOverlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreenoverlayshow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreenoverlayshow",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/TitlescreenoverlayshowProcedure.java"
+        ]
+      },
+      "path": "~/titlescreen"
     }
   ],
   "variable_elements": [],
@@ -170,11 +224,7 @@
     "name": "~",
     "children": [
       {
-        "name": "Events",
-        "children": []
-      },
-      {
-        "name": "Blocks",
+        "name": "titlescreen",
         "children": []
       },
       {
@@ -185,6 +235,14 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Events",
+        "children": []
       }
     ]
   },

@@ -1,11 +1,6 @@
 package net.mcreator.recollection.procedures;
 
-import net.minecraft.commands.CommandSourceStack;
-
-import net.mcreator.recollection.WindowsMessageBox;
-
-import com.mojang.brigadier.context.CommandContext;
-import com.mojang.brigadier.arguments.StringArgumentType;
+import net.minecraftforge.eventbus.api.Event;
 
 public class WindowsMessageBoxTestCommandProcedure {
 	public static void execute(CommandContext<CommandSourceStack> arguments) {
