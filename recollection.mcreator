@@ -215,28 +215,15 @@
       "path": "~/testing"
     },
     {
-      "name": "Titlescreen4",
-      "type": "overlay",
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "titlescreen_4",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen4Overlay.java"
-        ]
-      },
-      "path": "~/titlescreen"
-    },
-    {
       "name": "UnknownActivity",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "unknown_activity",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/client/gui/UnknownActivityScreen.java",
           "src/main/java/net/mcreator/recollection/world/inventory/UnknownActivityMenu.java",
+          "src/main/java/net/mcreator/recollection/client/gui/UnknownActivityScreen.java",
           "src/main/java/net/mcreator/recollection/network/UnknownActivityButtonMessage.java"
         ]
       },
@@ -245,7 +232,7 @@
     {
       "name": "CancelLeave",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "cancel_leave",
       "metadata": {
@@ -278,7 +265,7 @@
     {
       "name": "ContinueButton",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "continue_button",
       "metadata": {
@@ -293,6 +280,19 @@
         ]
       },
       "path": "~/WorldWarning"
+    },
+    {
+      "name": "Titlescreen4",
+      "type": "overlay",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "titlescreen_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen4Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
     }
   ],
   "variable_elements": [
@@ -324,12 +324,8 @@
   "metadata": {
     "files": [
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
       "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/recollection/RecollectionMod.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
-      "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
     ]
