@@ -308,29 +308,6 @@
       "path": "~/whenyoujoin"
     },
     {
-      "name": "Joingiveadvancment",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "joingiveadvancment",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/recollection/procedures/JoingiveadvancmentProcedure.java"
-        ]
-      },
-      "path": "~/whenyoujoin"
-    },
-    {
       "name": "Joinshowthatgui",
       "type": "procedure",
       "compiles": true,
@@ -429,6 +406,18 @@
         ]
       },
       "path": "~/titlescreen"
+    },
+    {
+      "name": "Graceful",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graceful",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/GracePeriod"
     }
   ],
   "variable_elements": [
@@ -467,7 +456,9 @@
       "gui.recollection.titlescreen_6.label_save_us": "save us",
       "gui.recollection.titlescreen_7.label_leave_the_game": "LEAVE THE GAME",
       "gui.recollection.titlescreen_8.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
-      "gui.recollection.titlescreen_9.label_leave_the_game": "THE COLLECTION KILLED US ALL"
+      "gui.recollection.titlescreen_9.label_leave_the_game": "THE COLLECTION KILLED US ALL",
+      "gamerule.graceful.description": "they welcome you",
+      "gamerule.graceful": "graceful"
     }
   },
   "metadata": {
@@ -480,6 +471,7 @@
       "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
       "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModGameRules.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
     ]
@@ -518,6 +510,10 @@
       },
       {
         "name": "whenyoujoin",
+        "children": []
+      },
+      {
+        "name": "GracePeriod",
         "children": []
       }
     ]
