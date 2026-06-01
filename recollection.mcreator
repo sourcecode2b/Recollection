@@ -200,9 +200,118 @@
         ]
       },
       "path": "~/titlescreen"
+    },
+    {
+      "name": "UnknownActivity",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unknown_activity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/world/inventory/UnknownActivityMenu.java",
+          "src/main/java/net/mcreator/recollection/client/gui/UnknownActivityScreen.java",
+          "src/main/java/net/mcreator/recollection/network/UnknownActivityButtonMessage.java"
+        ]
+      },
+      "path": "~/WorldWarning"
+    },
+    {
+      "name": "ContinueButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "continue_button",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/ContinueButtonProcedure.java"
+        ]
+      },
+      "path": "~/WorldWarning"
+    },
+    {
+      "name": "CancelLeave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cancel_leave",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/CancelLeaveProcedure.java"
+        ]
+      },
+      "path": "~/WorldWarning"
+    },
+    {
+      "name": "Recollection",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recollection",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Unknownactivityseenyesno",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unknownactivityseenyesno",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/UnknownactivityseenyesnoProcedure.java"
+        ]
+      },
+      "path": "~/WorldWarning"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "unknownactivitySEEN",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
@@ -211,14 +320,23 @@
       "block.recollection.voide": "Void",
       "gui.recollection.titlescreen_2.label_leave_the_game": "THE COLLECTION KILLED US ALL",
       "gui.recollection.titlescreen_3.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
-      "gui.recollection.titlescreenone.label_leave_the_game": "LEAVE THE GAME"
+      "gui.recollection.titlescreenone.label_leave_the_game": "LEAVE THE GAME",
+      "gui.recollection.unknown_activity.label_empty": "Unknown Activity found in this world",
+      "gui.recollection.unknown_activity.button_proceed": "Proceed..?",
+      "gui.recollection.unknown_activity.label_is_it_true_you_wish_to_proceed": "Is it true you wish to proceed?",
+      "gui.recollection.unknown_activity.button_cancel": "Cancel",
+      "item_group.recollection.recollection": "Recollection"
     }
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/recollection/RecollectionMod.java",
+      "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
+      "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
     ]
@@ -245,6 +363,10 @@
       },
       {
         "name": "Events",
+        "children": []
+      },
+      {
+        "name": "WorldWarning",
         "children": []
       }
     ]
