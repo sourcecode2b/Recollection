@@ -271,7 +271,7 @@
     {
       "name": "Unknownactivityseenyesno",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "unknownactivityseenyesno",
       "metadata": {
@@ -362,6 +362,12 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "dontdeleteitstheunknown",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -382,9 +388,13 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/recollection/RecollectionMod.java",
+      "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
+      "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
     ]
