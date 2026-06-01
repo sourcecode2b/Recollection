@@ -19,13 +19,27 @@ public class WindowShakeHandler {
 	private static int originalX = 0;
 	private static int originalY = 0;
 	private static boolean positionSaved = false;
+	private static boolean wasFullscreen = false;
 
 	private static final Random RANDOM = new Random();
 
 	public static void shake(int durationTicks, float intensityPixels) {
-		if (!positionSaved) {
-			savePosition();
+		Minecraft mc = Minecraft.getInstance();
+		if (mc.getWindow().isFullscreen()) {
+			wasFullscreen = true;
+			mc.getWindow().toggleFullScreen();
+			mc.execute(() -> {
+				if (!positionSaved) {
+					savePosition();
+				}
+			});
+		} else {
+			wasFullscreen = false;
+			if (!positionSaved) {
+				savePosition();
+			}
 		}
+
 		shakeTicks = durationTicks;
 		maxShakeTicks = durationTicks;
 		shakeIntensity = intensityPixels;
@@ -54,6 +68,10 @@ public class WindowShakeHandler {
 		if (positionSaved) {
 			GLFW.glfwSetWindowPos(getHandle(), originalX, originalY);
 			positionSaved = false;
+		}
+		if (wasFullscreen) {
+			Minecraft.getInstance().getWindow().toggleFullScreen();
+			wasFullscreen = false;
 		}
 	}
 
