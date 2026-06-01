@@ -11,5 +11,10 @@
   "item_group.recollection.recollection": "Recollection",
   "gui.recollection.titlescreen_4.label_save_us": "save us",
   "advancements.him.title": "_",
-  "advancements.him.descr": "....................."
+  "advancements.him.descr": ".....................",
+  "gui.recollection.titlescreen_5.label_save_us": "save us",
+  "gui.recollection.titlescreen_6.label_save_us": "save us",
+  "gui.recollection.titlescreen_7.label_leave_the_game": "LEAVE THE GAME",
+  "gui.recollection.titlescreen_8.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
+  "gui.recollection.titlescreen_9.label_leave_the_game": "THE COLLECTION KILLED US ALL"
 }

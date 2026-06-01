@@ -364,6 +364,71 @@
         ]
       },
       "path": "~/whenyoujoin"
+    },
+    {
+      "name": "Titlescreen5",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen5Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen6",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen6Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen7",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen7Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen8",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_8",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen8Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen9",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_9",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen9Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
     }
   ],
   "variable_elements": [
@@ -397,7 +462,12 @@
       "item_group.recollection.recollection": "Recollection",
       "gui.recollection.titlescreen_4.label_save_us": "save us",
       "advancements.him.title": "_",
-      "advancements.him.descr": "....................."
+      "advancements.him.descr": ".....................",
+      "gui.recollection.titlescreen_5.label_save_us": "save us",
+      "gui.recollection.titlescreen_6.label_save_us": "save us",
+      "gui.recollection.titlescreen_7.label_leave_the_game": "LEAVE THE GAME",
+      "gui.recollection.titlescreen_8.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
+      "gui.recollection.titlescreen_9.label_leave_the_game": "THE COLLECTION KILLED US ALL"
     }
   },
   "metadata": {
