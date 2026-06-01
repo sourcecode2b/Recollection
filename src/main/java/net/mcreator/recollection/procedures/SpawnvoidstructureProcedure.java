@@ -9,7 +9,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.recollection.init.RecollectionModBlocks;
-import net.mcreator.recollection.RecollectionMod;
 
 import javax.annotation.Nullable;
 
@@ -28,36 +27,16 @@ public class SpawnvoidstructureProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
 		if (Math.random() > 0.99999999) {
-			RecollectionMod.queueServerWork(2, () -> {
-				world.setBlock(BlockPos.containing(x, y, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			});
-			RecollectionMod.queueServerWork(3, () -> {
-				world.setBlock(BlockPos.containing(x, y + 1, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			});
-			RecollectionMod.queueServerWork(4, () -> {
-				world.setBlock(BlockPos.containing(x, y + 2, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			});
-			RecollectionMod.queueServerWork(5, () -> {
-				world.setBlock(BlockPos.containing(x, y + 3, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			});
-			RecollectionMod.queueServerWork(6, () -> {
-				world.setBlock(BlockPos.containing(x, y + 4, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			});
-			RecollectionMod.queueServerWork(7, () -> {
-				world.setBlock(BlockPos.containing(x, y + 5, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			});
-			RecollectionMod.queueServerWork(8, () -> {
-				world.setBlock(BlockPos.containing(x, y + 6, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			});
-			RecollectionMod.queueServerWork(9, () -> {
-				world.setBlock(BlockPos.containing(x, y + 7, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			});
-			RecollectionMod.queueServerWork(10, () -> {
-				world.setBlock(BlockPos.containing(x, y + 8, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			});
-			RecollectionMod.queueServerWork(11, () -> {
-				world.setBlock(BlockPos.containing(x, y + 9, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			});
+			world.setBlock(BlockPos.containing(x, y, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y + 1, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y + 2, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y + 3, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y + 4, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y + 5, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y + 6, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y + 7, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y + 8, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y + 9, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
 		}
 	}
 }
