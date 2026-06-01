@@ -8,11 +8,11 @@
       "registry_name": "voide",
       "metadata": {
         "files": [
-          "src/main/resources/assets/recollection/models/item/voide.json",
           "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
-          "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
+          "src/main/resources/assets/recollection/models/block/voide.json",
           "src/main/resources/assets/recollection/blockstates/voide.json",
-          "src/main/resources/assets/recollection/models/block/voide.json"
+          "src/main/resources/assets/recollection/models/item/voide.json",
+          "src/main/resources/data/recollection/loot_tables/blocks/voide.json"
         ]
       },
       "path": "~/Blocks"
@@ -219,7 +219,7 @@
     {
       "name": "CancelLeave",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "cancel_leave",
       "metadata": {
@@ -252,7 +252,7 @@
     {
       "name": "ContinueButton",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "continue_button",
       "metadata": {
@@ -271,7 +271,7 @@
     {
       "name": "Shaketestscreen",
       "type": "command",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "shaketestscreen",
       "metadata": {
@@ -284,7 +284,7 @@
     {
       "name": "Popuptabstest",
       "type": "command",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "popuptabstest",
       "metadata": {
@@ -297,7 +297,7 @@
     {
       "name": "Windowshaketest",
       "type": "command",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "windowshaketest",
       "metadata": {
@@ -310,7 +310,7 @@
     {
       "name": "Voidspawnstructuretest",
       "type": "command",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "voidspawnstructuretest",
       "metadata": {
