@@ -47,6 +47,60 @@
         ]
       },
       "path": "~/Events"
+    },
+    {
+      "name": "Titlescreenoverlayshow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreenoverlayshow",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/TitlescreenoverlayshowProcedure.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreenone",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreenone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/TitlescreenoneOverlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen2",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen2Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen3",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen3Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
     }
   ],
   "variable_elements": [],
@@ -55,7 +109,10 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "block.recollection.voide": "Void"
+      "block.recollection.voide": "Void",
+      "gui.recollection.titlescreenone.label_leave_the_game": "LEAVE THE GAME",
+      "gui.recollection.titlescreen_2.label_leave_the_game": "THE COLLECTION KILLED US ALL",
+      "gui.recollection.titlescreen_3.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --"
     }
   },
   "metadata": {
@@ -76,6 +133,10 @@
       },
       {
         "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "titlescreen",
         "children": []
       }
     ]

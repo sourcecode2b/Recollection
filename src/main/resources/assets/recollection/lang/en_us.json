@@ -1,3 +1,6 @@
 {
-  "block.recollection.voide": "Void"
+  "block.recollection.voide": "Void",
+  "gui.recollection.titlescreenone.label_leave_the_game": "LEAVE THE GAME",
+  "gui.recollection.titlescreen_2.label_leave_the_game": "THE COLLECTION KILLED US ALL",
+  "gui.recollection.titlescreen_3.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --"
 }
