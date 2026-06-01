@@ -222,8 +222,8 @@
       "registry_name": "unknown_activity",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/world/inventory/UnknownActivityMenu.java",
           "src/main/java/net/mcreator/recollection/client/gui/UnknownActivityScreen.java",
+          "src/main/java/net/mcreator/recollection/world/inventory/UnknownActivityMenu.java",
           "src/main/java/net/mcreator/recollection/network/UnknownActivityButtonMessage.java"
         ]
       },
@@ -293,6 +293,77 @@
         ]
       },
       "path": "~/titlescreen"
+    },
+    {
+      "name": "Him",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "him",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/advancements/him.json"
+        ]
+      },
+      "path": "~/whenyoujoin"
+    },
+    {
+      "name": "Joingiveadvancment",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "joingiveadvancment",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/JoingiveadvancmentProcedure.java"
+        ]
+      },
+      "path": "~/whenyoujoin"
+    },
+    {
+      "name": "Joinshowthatgui",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "joinshowthatgui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/JoinshowthatguiProcedure.java"
+        ]
+      },
+      "path": "~/whenyoujoin"
     }
   ],
   "variable_elements": [
@@ -324,18 +395,20 @@
       "gui.recollection.unknown_activity.label_is_it_true_you_wish_to_proceed": "Is it true you wish to proceed?",
       "gui.recollection.unknown_activity.button_cancel": "Cancel",
       "item_group.recollection.recollection": "Recollection",
-      "gui.recollection.titlescreen_4.label_save_us": "save us"
+      "gui.recollection.titlescreen_4.label_save_us": "save us",
+      "advancements.him.title": "_",
+      "advancements.him.descr": "....................."
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/recollection/init/RecollectionModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
+      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/recollection/RecollectionMod.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
       "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
@@ -371,6 +444,10 @@
       },
       {
         "name": "Events",
+        "children": []
+      },
+      {
+        "name": "whenyoujoin",
         "children": []
       }
     ]

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "recollection:voide"
+    },
+    "title": {
+      "translate": "advancements.him.title"
+    },
+    "description": {
+      "translate": "advancements.him.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "him_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft:adventure/adventuring_time"
+}

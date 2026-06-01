@@ -9,5 +9,7 @@
   "gui.recollection.unknown_activity.label_is_it_true_you_wish_to_proceed": "Is it true you wish to proceed?",
   "gui.recollection.unknown_activity.button_cancel": "Cancel",
   "item_group.recollection.recollection": "Recollection",
-  "gui.recollection.titlescreen_4.label_save_us": "save us"
+  "gui.recollection.titlescreen_4.label_save_us": "save us",
+  "advancements.him.title": "_",
+  "advancements.him.descr": "....................."
 }

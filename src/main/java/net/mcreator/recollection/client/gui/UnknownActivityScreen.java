@@ -41,11 +41,6 @@ public class UnknownActivityScreen extends AbstractContainerScreen<UnknownActivi
 		menuStateUpdateActive = false;
 	}
 
-	@Override
-	public boolean isPauseScreen() {
-		return true;
-	}
-
 	private static final ResourceLocation texture = ResourceLocation.parse("recollection:textures/screens/unknown_activity.png");
 
 	@Override
@@ -62,10 +57,7 @@ public class UnknownActivityScreen extends AbstractContainerScreen<UnknownActivi
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		guiGraphics.blit(ResourceLocation.parse("recollection:textures/screens/end_poem_background.png"), this.leftPos + 11, this.topPos + 3, 0, 0, 427, 240, 427, 240);
-		guiGraphics.blit(ResourceLocation.parse("recollection:textures/screens/red-blood-cells.jpg.png"), this.leftPos + -68, this.topPos + 237, 0, 0, 760, 536, 760, 536);
-		guiGraphics.blit(ResourceLocation.parse("recollection:textures/screens/red-blood-cells.jpg.png"), this.leftPos + 432, this.topPos + -57, 0, 0, 760, 536, 760, 536);
-		guiGraphics.blit(ResourceLocation.parse("recollection:textures/screens/red-blood-cells.jpg.png"), this.leftPos + -66, this.topPos + -527, 0, 0, 760, 536, 760, 536);
-		guiGraphics.blit(ResourceLocation.parse("recollection:textures/screens/red-blood-cells.jpg.png"), this.leftPos + -743, this.topPos + -33, 0, 0, 760, 536, 760, 536);
+		guiGraphics.blit(ResourceLocation.parse("recollection:textures/screens/13530476-cover_xl.png"), this.leftPos + -66, this.topPos + -527, 0, 0, -1, -1, -1, -1);
 		RenderSystem.disableBlend();
 	}
 
@@ -94,7 +86,7 @@ public class UnknownActivityScreen extends AbstractContainerScreen<UnknownActivi
 				RecollectionMod.PACKET_HANDLER.sendToServer(new UnknownActivityButtonMessage(0, x, y, z));
 				UnknownActivityButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 371, this.topPos + 213, 56, 20).build();
+		}).bounds(this.leftPos + 26, this.topPos + 210, 56, 20).build();
 		this.addRenderableWidget(button_cancel);
 		button_proceed = Button.builder(Component.translatable("gui.recollection.unknown_activity.button_proceed"), e -> {
 			int x = UnknownActivityScreen.this.x;
@@ -103,7 +95,7 @@ public class UnknownActivityScreen extends AbstractContainerScreen<UnknownActivi
 				RecollectionMod.PACKET_HANDLER.sendToServer(new UnknownActivityButtonMessage(1, x, y, z));
 				UnknownActivityButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 31, this.topPos + 210, 77, 20).build();
+		}).bounds(this.leftPos + 352, this.topPos + 210, 77, 20).build();
 		this.addRenderableWidget(button_proceed);
 	}
 }
