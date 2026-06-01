@@ -8,11 +8,11 @@
       "registry_name": "voide",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
-          "src/main/resources/assets/recollection/models/block/voide.json",
-          "src/main/resources/assets/recollection/blockstates/voide.json",
           "src/main/resources/assets/recollection/models/item/voide.json",
-          "src/main/resources/data/recollection/loot_tables/blocks/voide.json"
+          "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
+          "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
+          "src/main/resources/assets/recollection/blockstates/voide.json",
+          "src/main/resources/assets/recollection/models/block/voide.json"
         ]
       },
       "path": "~/Blocks"
@@ -202,6 +202,19 @@
       "path": "~/titlescreen"
     },
     {
+      "name": "Voidspawnstructuretest",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidspawnstructuretest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/VoidspawnstructuretestCommand.java"
+        ]
+      },
+      "path": "~/testing"
+    },
+    {
       "name": "UnknownActivity",
       "type": "gui",
       "compiles": true,
@@ -267,71 +280,19 @@
         ]
       },
       "path": "~/WorldWarning"
-    },
-    {
-      "name": "Shaketestscreen",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shaketestscreen",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/command/ShaketestscreenCommand.java"
-        ]
-      },
-      "path": "~/testing"
-    },
-    {
-      "name": "Popuptabstest",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "popuptabstest",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/command/PopuptabstestCommand.java"
-        ]
-      },
-      "path": "~/testing"
-    },
-    {
-      "name": "Windowshaketest",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "windowshaketest",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/command/WindowshaketestCommand.java"
-        ]
-      },
-      "path": "~/testing"
-    },
-    {
-      "name": "Voidspawnstructuretest",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "voidspawnstructuretest",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/command/VoidspawnstructuretestCommand.java"
-        ]
-      },
-      "path": "~/testing"
     }
   ],
   "variable_elements": [
     {
-      "name": "unknownactivitySEEN",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
       "name": "dontdeleteitstheunknown",
       "type": "logic",
       "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "unknownactivitySEEN",
+      "type": "logic",
+      "scope": "map",
       "value": "false"
     }
   ],
@@ -353,13 +314,9 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/recollection/RecollectionMod.java",
-      "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
-      "src/main/resources/META-INF/mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
-      "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/recollection/RecollectionMod.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
     ]

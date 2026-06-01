@@ -1,7 +1,6 @@
 package net.mcreator.recollection.procedures;
 
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
 public class ContinueButtonProcedure {
 	public static void execute(Entity entity) {
