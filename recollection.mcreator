@@ -8,11 +8,11 @@
       "registry_name": "voide",
       "metadata": {
         "files": [
-          "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
-          "src/main/resources/assets/recollection/models/block/voide.json",
-          "src/main/resources/assets/recollection/blockstates/voide.json",
+          "src/main/resources/assets/recollection/models/item/voide.json",
           "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
-          "src/main/resources/assets/recollection/models/item/voide.json"
+          "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
+          "src/main/resources/assets/recollection/blockstates/voide.json",
+          "src/main/resources/assets/recollection/models/block/voide.json"
         ]
       },
       "path": "~/Blocks"
@@ -222,8 +222,8 @@
       "registry_name": "unknown_activity",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/client/gui/UnknownActivityScreen.java",
           "src/main/java/net/mcreator/recollection/world/inventory/UnknownActivityMenu.java",
+          "src/main/java/net/mcreator/recollection/client/gui/UnknownActivityScreen.java",
           "src/main/java/net/mcreator/recollection/network/UnknownActivityButtonMessage.java"
         ]
       },
@@ -329,12 +329,13 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModTabs.java",
       "src/main/java/net/mcreator/recollection/RecollectionMod.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
       "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"

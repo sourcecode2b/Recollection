@@ -17,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.recollection.init.RecollectionModTabs;
 import net.mcreator.recollection.init.RecollectionModMenus;
 import net.mcreator.recollection.init.RecollectionModItems;
 import net.mcreator.recollection.init.RecollectionModBlocks;
@@ -44,6 +45,8 @@ public class RecollectionMod {
 		RecollectionModBlocks.REGISTRY.register(bus);
 
 		RecollectionModItems.REGISTRY.register(bus);
+
+		RecollectionModTabs.REGISTRY.register(bus);
 
 		RecollectionModMenus.REGISTRY.register(bus);
 
