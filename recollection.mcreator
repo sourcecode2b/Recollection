@@ -217,7 +217,7 @@
     {
       "name": "Titlescreen4",
       "type": "overlay",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "titlescreen_4",
       "metadata": {
@@ -230,7 +230,7 @@
     {
       "name": "UnknownActivity",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "unknown_activity",
       "metadata": {
@@ -245,7 +245,7 @@
     {
       "name": "CancelLeave",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cancel_leave",
       "metadata": {
@@ -278,7 +278,7 @@
     {
       "name": "ContinueButton",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "continue_button",
       "metadata": {
@@ -324,8 +324,12 @@
   "metadata": {
     "files": [
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
       "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/recollection/RecollectionMod.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
+      "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
     ]
