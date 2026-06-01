@@ -202,45 +202,6 @@
       "path": "~/titlescreen"
     },
     {
-      "name": "Windowshaketest",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "windowshaketest",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/command/WindowshaketestCommand.java"
-        ]
-      },
-      "path": "~/testing"
-    },
-    {
-      "name": "Shaketestscreen",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shaketestscreen",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/command/ShaketestscreenCommand.java"
-        ]
-      },
-      "path": "~/testing"
-    },
-    {
-      "name": "Popuptabstest",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "popuptabstest",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/command/PopuptabstestCommand.java"
-        ]
-      },
-      "path": "~/testing"
-    },
-    {
       "name": "Voidspawnstructuretest",
       "type": "command",
       "compiles": true,
@@ -265,9 +226,89 @@
         ]
       },
       "path": "~/titlescreen"
+    },
+    {
+      "name": "UnknownActivity",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unknown_activity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/gui/UnknownActivityScreen.java",
+          "src/main/java/net/mcreator/recollection/world/inventory/UnknownActivityMenu.java",
+          "src/main/java/net/mcreator/recollection/network/UnknownActivityButtonMessage.java"
+        ]
+      },
+      "path": "~/WorldWarning"
+    },
+    {
+      "name": "CancelLeave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cancel_leave",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/CancelLeaveProcedure.java"
+        ]
+      },
+      "path": "~/WorldWarning"
+    },
+    {
+      "name": "Recollection",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recollection",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ContinueButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "continue_button",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/ContinueButtonProcedure.java"
+        ]
+      },
+      "path": "~/WorldWarning"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "dontdeleteitstheunknown",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "unknownactivitySEEN",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
@@ -277,8 +318,7 @@
       "gui.recollection.titlescreen_2.label_leave_the_game": "THE COLLECTION KILLED US ALL",
       "gui.recollection.titlescreen_3.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
       "gui.recollection.titlescreenone.label_leave_the_game": "LEAVE THE GAME",
-      "gui.recollection.titlescreen_4.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
-      "gui.recollection.titlescreen_4.label_save_us": "save us"
+      "gui.recollection.titlescreen_4.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --"
     }
   },
   "metadata": {
@@ -293,6 +333,10 @@
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "testing",
+        "children": []
+      },
       {
         "name": "titlescreen",
         "children": []
@@ -311,11 +355,11 @@
         "children": []
       },
       {
-        "name": "Events",
+        "name": "WorldWarning",
         "children": []
       },
       {
-        "name": "testing",
+        "name": "Events",
         "children": []
       }
     ]

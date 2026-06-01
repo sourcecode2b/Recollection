@@ -1,0 +1,136 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 450,
+    "height": 247,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_cancel",
+          "text": "Cancel",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CancelLeave"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 360,
+          "y": 210,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_proceed",
+          "text": "Proceed..?",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ContinueButton"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 20,
+          "y": 207,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "Unknown Activity found in this world"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 22,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_is_it_true_you_wish_to_proceed",
+          "text": {
+            "fixedValue": "Is it true you wish to proceed?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 22,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "end_poem_background.png",
+          "use1Xscale": true,
+          "x": 0,
+          "y": 0,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "red-blood-cells.jpg.png",
+          "use1Xscale": false,
+          "x": -79,
+          "y": 234,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "red-blood-cells.jpg.png",
+          "use1Xscale": false,
+          "x": 421,
+          "y": -60,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "red-blood-cells.jpg.png",
+          "use1Xscale": false,
+          "x": -77,
+          "y": -530,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "red-blood-cells.jpg.png",
+          "use1Xscale": false,
+          "x": -754,
+          "y": -36,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 16,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

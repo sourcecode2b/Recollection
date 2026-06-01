@@ -12,6 +12,7 @@ import net.mcreator.recollection.procedures.WindowShakeTestCommandProcedure;
 import net.mcreator.recollection.procedures.ScreenShakeTestCommandProcedure;
 import net.mcreator.recollection.procedures.WindowsMessageBoxTestCommandProcedure;
 
+
 @Mod.EventBusSubscriber(value = Dist.CLIENT)
 public class ScreenShakeCommandCommand {
 
