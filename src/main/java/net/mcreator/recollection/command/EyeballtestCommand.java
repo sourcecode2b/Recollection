@@ -31,7 +31,7 @@ public class EyeballtestCommand {
 					if (entity != null)
 						direction = entity.getDirection();
 
-					SpawneyeballssurroundingyouProcedure.execute(world, x, y, z);
+					SpawneyeballssurroundingyouProcedure.execute(world, x, y, z, entity);
 					return 0;
 				}));
 	}
