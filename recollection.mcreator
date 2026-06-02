@@ -466,6 +466,62 @@
         ]
       },
       "path": "~/Events"
+    },
+    {
+      "name": "Eyeball",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyeball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/recollection/particles/eyeball.json",
+          "src/main/java/net/mcreator/recollection/client/particle/EyeballParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "Spawneyeballssurroundingyou",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawneyeballssurroundingyou",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/SpawneyeballssurroundingyouProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Eyeballtest",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyeballtest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/command/EyeballtestCommand.java"
+        ]
+      },
+      "path": "~/testing"
     }
   ],
   "variable_elements": [
@@ -521,6 +577,8 @@
       "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
       "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModGameRules.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModParticleTypes.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModParticles.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
     ]
