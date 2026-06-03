@@ -1,6 +1,20 @@
 package net.mcreator.recollection.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.TickEvent;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.ExperienceOrb;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+
+import net.mcreator.recollection.init.RecollectionModGameRules;
+
+import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class SpawnvcollectedportalProcedure {

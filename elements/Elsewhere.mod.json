@@ -12,6 +12,10 @@
     "underwaterBlock": {
       "value": "Blocks.GRAVEL"
     },
+    "fogColor": {
+      "value": -16764109,
+      "falpha": 0.0
+    },
     "ambientSound": {
       "value": ""
     },
@@ -37,7 +41,7 @@
     "spawnBiomeNether": false,
     "genTemperature": {
       "min": -0.5,
-      "max": 0.5
+      "max": 0.49920000000000003
     },
     "genHumidity": {
       "min": -0.5,
@@ -72,8 +76,6 @@
       "value": ""
     },
     "defaultFeatures": [
-      "Caves",
-      "Ores",
       "FrozenTopLayer"
     ],
     "spawnStronghold": false,
@@ -88,7 +90,7 @@
     "spawnIgloo": false,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
-    "spawnShipwreckBeached": false,
+    "spawnShipwreckBeached": true,
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,

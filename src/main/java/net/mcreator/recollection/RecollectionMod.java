@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.recollection.init.RecollectionModTabs;
+import net.mcreator.recollection.init.RecollectionModSounds;
 import net.mcreator.recollection.init.RecollectionModParticleTypes;
 import net.mcreator.recollection.init.RecollectionModMenus;
 import net.mcreator.recollection.init.RecollectionModItems;
@@ -43,7 +44,7 @@ public class RecollectionMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = context.getModEventBus();
-
+		RecollectionModSounds.REGISTRY.register(bus);
 		RecollectionModBlocks.REGISTRY.register(bus);
 
 		RecollectionModItems.REGISTRY.register(bus);

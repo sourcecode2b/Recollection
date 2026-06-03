@@ -19,5 +19,6 @@ public class RecollectionModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.recollection.recollection")).icon(() -> new ItemStack(RecollectionModBlocks.VOIDE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(RecollectionModBlocks.VOIDE.get().asItem());
 				tabData.accept(RecollectionModItems.SEEKER_SPAWN_EGG.get());
+				tabData.accept(RecollectionModItems.SNOWED_IN_SPAWN_EGG.get());
 			}).build());
 }

@@ -8,12 +8,14 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.recollection.client.model.Modelsnowedvictim;
 import net.mcreator.recollection.client.model.Modelseeker;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class RecollectionModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelsnowedvictim.LAYER_LOCATION, Modelsnowedvictim::createBodyLayer);
 		event.registerLayerDefinition(Modelseeker.LAYER_LOCATION, Modelseeker::createBodyLayer);
 	}
 }

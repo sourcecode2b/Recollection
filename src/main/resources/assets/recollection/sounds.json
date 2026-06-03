@@ -1,0 +1,11 @@
+{
+  "notification": {
+    "subtitle": "subtitles.notification",
+    "sounds": [
+      {
+        "name": "recollection:error-notification",
+        "stream": false
+      }
+    ]
+  }
+}

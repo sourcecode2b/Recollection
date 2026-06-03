@@ -32,13 +32,13 @@ public class VoideBlock extends Block {
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		VoideOnBlockRightClickedProcedure.execute(entity);
+		VoideOnBlockRightClickedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
 
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		VoideOnBlockRightClickedProcedure.execute(entity);
+		VoideOnBlockRightClickedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
 
 	@Override
@@ -51,7 +51,7 @@ public class VoideBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		VoideOnBlockRightClickedProcedure.execute(entity);
+		VoideOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

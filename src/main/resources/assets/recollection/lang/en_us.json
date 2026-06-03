@@ -10,6 +10,16 @@
   "gui.recollection.unknown_activity.button_cancel": "Cancel",
   "item_group.recollection.recollection": "Recollection",
   "gui.recollection.titlescreen_4.label_save_us": "save us",
-  "entity.recollection.seeker": "Seeker",
-  "item.recollection.seeker_spawn_egg": "Seeker Spawn Egg"
+  "advancements.him.title": "_",
+  "advancements.him.descr": ".....................",
+  "gui.recollection.titlescreen_9.label_leave_the_game": "THE COLLECTION KILLED US ALL",
+  "gamerule.graceful.description": "they welcome you",
+  "biome.recollection.elsewhere": "Elsewhere",
+  "gui.recollection.titlescreen_8.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
+  "gamerule.graceful": "graceful",
+  "block.recollection.collected": "Collected",
+  "gui.recollection.titlescreen_6.label_save_us": "save us",
+  "gui.recollection.titlescreen_7.label_leave_the_game": "LEAVE THE GAME",
+  "subtitles.notification": "Mission",
+  "gui.recollection.titlescreen_5.label_save_us": "save us"
 }
