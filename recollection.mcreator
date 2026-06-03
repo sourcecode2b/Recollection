@@ -643,6 +643,66 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "Elseware2",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elseware_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure/elseware_2.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/elseware_2.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/elseware_2.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "Elseware3",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elseware_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure_set/elseware_3.json",
+          "src/main/resources/data/recollection/worldgen/structure/elseware_3.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/elseware_3.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "Elseware4",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elseware_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/template_pool/elseware_4.json",
+          "src/main/resources/data/recollection/worldgen/structure/elseware_4.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/elseware_4.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "E5",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "e_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure/e_5.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/e_5.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/e_5.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
     }
   ],
   "variable_elements": [
@@ -664,6 +724,9 @@
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.STONE#0",
       "~Blocks.SNOW"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:Elsewhere"
     ]
   },
   "tab_element_order": {},
@@ -695,13 +758,13 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/recollection/init/RecollectionModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
+      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/recollection/RecollectionMod.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
       "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModGameRules.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModParticleTypes.java",
