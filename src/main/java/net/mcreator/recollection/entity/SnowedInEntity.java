@@ -1,10 +1,44 @@
 package net.mcreator.recollection.entity;
 
-import net.minecraft.nbt.Tag;
-import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
+
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.AreaEffectCloud;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.DifficultyInstance;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.chat.Component;
+import net.minecraft.nbt.CompoundTag;
+
+import net.mcreator.recollection.procedures.SnowedInOnInitialEntitySpawnProcedure;
+import net.mcreator.recollection.procedures.SnowedInOnEntityTickUpdateProcedure;
+import net.mcreator.recollection.init.RecollectionModEntities;
+
+import javax.annotation.Nullable;
 
 public class SnowedInEntity extends Monster {
-
 	public SnowedInEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(RecollectionModEntities.SNOWED_IN.get(), world);
 	}
@@ -14,12 +48,9 @@ public class SnowedInEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-
 		setCustomName(Component.literal("Victim"));
 		setCustomNameVisible(true);
-
 		setPersistenceRequired();
-
 	}
 
 	@Override
@@ -30,14 +61,12 @@ public class SnowedInEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 		this.goalSelector.addGoal(1, new LookAtPlayerGoal(this, Player.class, (float) 200));
 		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, (float) 200));
 		this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, Player.class, (float) 200));
 		this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, Player.class, (float) 200));
 		this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, (float) 200));
 		this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, (float) 200));
-
 	}
 
 	@Override
@@ -129,7 +158,6 @@ public class SnowedInEntity extends Monster {
 
 	public static void init() {
 		SpawnPlacements.register(RecollectionModEntities.SNOWED_IN.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
-
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -139,8 +167,6 @@ public class SnowedInEntity extends Monster {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		return builder;
 	}
-
 }
