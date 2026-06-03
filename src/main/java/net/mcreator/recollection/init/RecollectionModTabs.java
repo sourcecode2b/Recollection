@@ -18,5 +18,6 @@ public class RecollectionModTabs {
 	public static final RegistryObject<CreativeModeTab> RECOLLECTION = REGISTRY.register("recollection",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.recollection.recollection")).icon(() -> new ItemStack(RecollectionModBlocks.VOIDE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(RecollectionModBlocks.VOIDE.get().asItem());
+				tabData.accept(RecollectionModItems.SNOWED_IN_SPAWN_EGG.get());
 			}).build());
 }

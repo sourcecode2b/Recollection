@@ -1,9 +1,25 @@
 package net.mcreator.recollection.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
+import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
+import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
+import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.recollection.RecollectionMod;
 
 public class CollectedEntityWalksOnTheBlockProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
@@ -20,5 +36,21 @@ public class CollectedEntityWalksOnTheBlockProcedure {
 				_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
 			}
 		}
+		if (entity instanceof Player _player) {
+			_player.getAbilities().invulnerable = true;
+			_player.onUpdateAbilities();
+		}
+		{
+			Entity _ent = entity;
+			_ent.teleportTo(x, (y + 120), z);
+			if (_ent instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.connection.teleport(x, (y + 120), z, _ent.getYRot(), _ent.getXRot());
+		}
+		RecollectionMod.queueServerWork(500, () -> {
+			if (entity instanceof Player _player) {
+				_player.getAbilities().invulnerable = false;
+				_player.onUpdateAbilities();
+			}
+		});
 	}
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "recollection:block/heart",
+    "up": "recollection:block/heart",
+    "north": "recollection:block/heart",
+    "east": "recollection:block/heart",
+    "south": "recollection:block/heart",
+    "west": "recollection:block/heart",
+    "particle": "recollection:block/heart"
+  },
+  "render_type": "solid"
+}
