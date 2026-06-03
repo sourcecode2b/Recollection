@@ -6,6 +6,7 @@ public class HeartBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		WindowsMessageBox.warn("lost souls", "your grace has been lost");
 		world.getLevelData().getGameRules().getRule(RecollectionModGameRules.HEARTNEEDTOBE_DESTROYIED).set(false, world.getServer());
 		world.getLevelData().getGameRules().getRule(RecollectionModGameRules.GRACEFUL).set(false, world.getServer());
 		if (entity instanceof ServerPlayer _player)
@@ -14,11 +15,11 @@ public class HeartBlockDestroyedByPlayerProcedure {
 			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7did uoy tahw ta kool"), false);
 		entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 500, 1));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 300, 1));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 500, 50));
+			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 300, 50));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 500, 1));
+			_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 300, 1));
 		entity.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3(x, y, (z + 10)));
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles((SimpleParticleType) (RecollectionModParticleTypes.EYEBALL.get()), x, y, (z + 10), 1, 0, 2, 0, 0);

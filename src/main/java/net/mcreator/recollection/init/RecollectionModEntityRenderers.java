@@ -15,7 +15,7 @@ import net.mcreator.recollection.client.renderer.SeekerRenderer;
 public class RecollectionModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(RecollectionModEntities.SEEKER.get(), SeekerRenderer::new);
 		event.registerEntityRenderer(RecollectionModEntities.SNOWED_IN.get(), SnowedInRenderer::new);
+		event.registerEntityRenderer(RecollectionModEntities.SEEKER.get(), SeekerRenderer::new);
 	}
 }

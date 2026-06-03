@@ -29,7 +29,7 @@ public class ListentothebadguyProcedure {
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7cdetrats uoy erehw ot kcab og"), false);
 			});
-			RecollectionMod.queueServerWork(320, () -> {
+			RecollectionMod.queueServerWork(8600, () -> {
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.COBBLESTONE.defaultBlockState(), 3);
 				world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.COBBLESTONE.defaultBlockState(), 3);
 				world.setBlock(BlockPos.containing(x, y + 2, z), Blocks.COBBLESTONE.defaultBlockState(), 3);
@@ -59,7 +59,7 @@ public class ListentothebadguyProcedure {
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7csu evas dna"), false);
 				});
-				RecollectionMod.queueServerWork(360, () -> {
+				RecollectionMod.queueServerWork(8850, () -> {
 					WindowsMessageBox.show("???", "break the heart.");
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {

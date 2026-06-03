@@ -1,21 +1,5 @@
 package net.mcreator.recollection.client.gui;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.gui.GuiGraphics;
-
-import net.mcreator.recollection.world.inventory.UnknownActivityMenu;
-import net.mcreator.recollection.network.UnknownActivityButtonMessage;
-import net.mcreator.recollection.init.RecollectionModScreens;
-import net.mcreator.recollection.RecollectionMod;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class UnknownActivityScreen extends AbstractContainerScreen<UnknownActivityMenu> implements RecollectionModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;

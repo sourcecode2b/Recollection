@@ -295,19 +295,17 @@
       "path": "~/titlescreen"
     },
     {
-      "name": "Elseware",
-      "type": "structure",
+      "name": "Him",
+      "type": "achievement",
       "compiles": true,
-      "locked_code": true,
-      "registry_name": "elseware",
+      "locked_code": false,
+      "registry_name": "him",
       "metadata": {
         "files": [
-          "src/main/resources/data/recollection/worldgen/structure_set/elseware.json",
-          "src/main/resources/data/recollection/worldgen/structure/elseware.json",
-          "src/main/resources/data/recollection/worldgen/template_pool/elseware.json"
+          "src/main/resources/data/recollection/advancements/him.json"
         ]
       },
-      "path": "~/Dimension1elsewhere"
+      "path": "~/whenyoujoin"
     },
     {
       "name": "Joinshowthatgui",
@@ -345,6 +343,71 @@
       "path": "~/whenyoujoin"
     },
     {
+      "name": "Titlescreen5",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen5Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen6",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen6Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen7",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen7Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen8",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_8",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen8Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
+      "name": "Titlescreen9",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titlescreen_9",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen9Overlay.java"
+        ]
+      },
+      "path": "~/titlescreen"
+    },
+    {
       "name": "Graceful",
       "type": "gamerule",
       "compiles": true,
@@ -357,51 +420,21 @@
       "path": "~/GracePeriod"
     },
     {
-      "name": "Spawneyeballssurroundingyou",
-      "type": "procedure",
+      "name": "Collected",
+      "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spawneyeballssurroundingyou",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/recollection/procedures/SpawneyeballssurroundingyouProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "Him",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "him",
+      "registry_name": "collected",
       "metadata": {
         "files": [
-          "src/main/resources/data/recollection/advancements/him.json"
+          "src/main/java/net/mcreator/recollection/block/CollectedBlock.java",
+          "src/main/resources/assets/recollection/models/block/collected.json",
+          "src/main/resources/data/recollection/loot_tables/blocks/collected.json",
+          "src/main/resources/assets/recollection/blockstates/collected.json",
+          "src/main/resources/assets/recollection/models/item/collected.json"
         ]
       },
-      "path": "~/whenyoujoin"
+      "path": "~/Blocks"
     },
     {
       "name": "Spawnvcollectedportal",
@@ -439,58 +472,6 @@
       "path": "~/Events"
     },
     {
-      "name": "Titlescreen8",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "titlescreen_8",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen8Overlay.java"
-        ]
-      },
-      "path": "~/titlescreen"
-    },
-    {
-      "name": "Titlescreen9",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "titlescreen_9",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen9Overlay.java"
-        ]
-      },
-      "path": "~/titlescreen"
-    },
-    {
-      "name": "Titlescreen6",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "titlescreen_6",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen6Overlay.java"
-        ]
-      },
-      "path": "~/titlescreen"
-    },
-    {
-      "name": "Titlescreen7",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "titlescreen_7",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen7Overlay.java"
-        ]
-      },
-      "path": "~/titlescreen"
-    },
-    {
       "name": "Eyeball",
       "type": "particle",
       "compiles": true,
@@ -498,23 +479,72 @@
       "registry_name": "eyeball",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/client/particle/EyeballParticle.java",
-          "src/main/resources/assets/recollection/particles/eyeball.json"
+          "src/main/resources/assets/recollection/particles/eyeball.json",
+          "src/main/java/net/mcreator/recollection/client/particle/EyeballParticle.java"
         ]
       }
     },
     {
-      "name": "Titlescreen5",
-      "type": "overlay",
+      "name": "Spawneyeballssurroundingyou",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "titlescreen_5",
+      "registry_name": "spawneyeballssurroundingyou",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/SpawneyeballssurroundingyouProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Eyeballtest",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyeballtest",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/client/screens/Titlescreen5Overlay.java"
+          "src/main/java/net/mcreator/recollection/command/EyeballtestCommand.java"
         ]
       },
-      "path": "~/titlescreen"
+      "path": "~/testing"
+    },
+    {
+      "name": "Elsewhere",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elsewhere",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/biome/elsewhere.json",
+          "src/main/resources/data/recollection/worldgen/configured_feature/elsewhere_tree.json",
+          "src/main/resources/data/recollection/worldgen/placed_feature/elsewhere_tree.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
     },
     {
       "name": "Elsewheree",
@@ -527,6 +557,21 @@
           "src/main/java/net/mcreator/recollection/world/dimension/ElsewhereeDimension.java",
           "src/main/resources/data/recollection/dimension_type/elsewheree.json",
           "src/main/resources/data/recollection/dimension/elsewheree.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "Elseware",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elseware",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure_set/elseware.json",
+          "src/main/resources/data/recollection/worldgen/structure/elseware.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/elseware.json"
         ]
       },
       "path": "~/Dimension1elsewhere"
@@ -547,38 +592,6 @@
       "path": "~/Dimension1elsewhere"
     },
     {
-      "name": "Elsewhere",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elsewhere",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/recollection/worldgen/biome/elsewhere.json",
-          "src/main/resources/data/recollection/worldgen/configured_feature/elsewhere_tree.json",
-          "src/main/resources/data/recollection/worldgen/placed_feature/elsewhere_tree.json"
-        ]
-      },
-      "path": "~/Dimension1elsewhere"
-    },
-    {
-      "name": "Collected",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "collected",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/block/CollectedBlock.java",
-          "src/main/resources/assets/recollection/models/block/collected.json",
-          "src/main/resources/data/recollection/loot_tables/blocks/collected.json",
-          "src/main/resources/assets/recollection/blockstates/collected.json",
-          "src/main/resources/assets/recollection/models/item/collected.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
       "name": "Elsewareexit",
       "type": "structure",
       "compiles": true,
@@ -594,19 +607,6 @@
       "path": "~/Dimension1elsewhere"
     },
     {
-      "name": "Eyeballtest",
-      "type": "command",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "eyeballtest",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/recollection/command/EyeballtestCommand.java"
-        ]
-      },
-      "path": "~/testing"
-    },
-    {
       "name": "VoideOnBlockRightClicked",
       "type": "procedure",
       "compiles": true,
@@ -617,6 +617,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -636,6 +652,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -645,20 +677,49 @@
       "path": "~/Blocks"
     },
     {
-      "name": "Seeker",
-      "type": "livingentity",
+      "name": "E5",
+      "type": "structure",
       "compiles": true,
-      "locked_code": false,
-      "registry_name": "seeker",
+      "locked_code": true,
+      "registry_name": "e_5",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/client/renderer/SeekerRenderer.java",
-          "src/main/java/net/mcreator/recollection/entity/SeekerEntity.java",
-          "src/main/resources/assets/recollection/models/item/seeker_spawn_egg.json",
-          "src/main/resources/data/recollection/forge/biome_modifier/seeker_biome_modifier.json"
+          "src/main/resources/data/recollection/worldgen/structure/e_5.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/e_5.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/e_5.json"
         ]
       },
-      "path": "~/Entities"
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "Elseware2",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elseware_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure/elseware_2.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/elseware_2.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/elseware_2.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "Elseware4",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elseware_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/template_pool/elseware_4.json",
+          "src/main/resources/data/recollection/worldgen/structure/elseware_4.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/elseware_4.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
     },
     {
       "name": "Heart",
@@ -709,21 +770,6 @@
       "path": "~/Dimension1elsewhere"
     },
     {
-      "name": "Elseware2",
-      "type": "structure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "elseware_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/recollection/worldgen/structure/elseware_2.json",
-          "src/main/resources/data/recollection/worldgen/template_pool/elseware_2.json",
-          "src/main/resources/data/recollection/worldgen/structure_set/elseware_2.json"
-        ]
-      },
-      "path": "~/Dimension1elsewhere"
-    },
-    {
       "name": "E3",
       "type": "structure",
       "compiles": true,
@@ -734,36 +780,6 @@
           "src/main/resources/data/recollection/worldgen/structure_set/e_3.json",
           "src/main/resources/data/recollection/worldgen/template_pool/e_3.json",
           "src/main/resources/data/recollection/worldgen/structure/e_3.json"
-        ]
-      },
-      "path": "~/Dimension1elsewhere"
-    },
-    {
-      "name": "Elseware4",
-      "type": "structure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "elseware_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/recollection/worldgen/template_pool/elseware_4.json",
-          "src/main/resources/data/recollection/worldgen/structure/elseware_4.json",
-          "src/main/resources/data/recollection/worldgen/structure_set/elseware_4.json"
-        ]
-      },
-      "path": "~/Dimension1elsewhere"
-    },
-    {
-      "name": "E5",
-      "type": "structure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "e_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/recollection/worldgen/structure/e_5.json",
-          "src/main/resources/data/recollection/worldgen/template_pool/e_5.json",
-          "src/main/resources/data/recollection/worldgen/structure_set/e_5.json"
         ]
       },
       "path": "~/Dimension1elsewhere"
@@ -978,6 +994,221 @@
         ]
       },
       "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "Seeker",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seeker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/client/renderer/SeekerRenderer.java",
+          "src/main/java/net/mcreator/recollection/entity/SeekerEntity.java",
+          "src/main/resources/assets/recollection/models/item/seeker_spawn_egg.json",
+          "src/main/resources/data/recollection/forge/biome_modifier/seeker_biome_modifier.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "Spawnstructuresign2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnstructuresign_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/Spawnstructuresign2Procedure.java"
+        ]
+      },
+      "path": "~/Events"
+    },
+    {
+      "name": "Spawnstructuresign23",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnstructuresign_23",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/Spawnstructuresign23Procedure.java"
+        ]
+      },
+      "path": "~/Events"
+    },
+    {
+      "name": "Spawnstructuresign1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnstructuresign_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/Spawnstructuresign1Procedure.java"
+        ]
+      },
+      "path": "~/Events"
+    },
+    {
+      "name": "Sign12",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_12",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure_set/sign_12.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/sign_12.json",
+          "src/main/resources/data/recollection/worldgen/structure/sign_12.json"
+        ]
+      },
+      "path": "~/Structures that will spawn if not graceful"
+    },
+    {
+      "name": "Sign123",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_123",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/template_pool/sign_123.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/sign_123.json",
+          "src/main/resources/data/recollection/worldgen/structure/sign_123.json"
+        ]
+      },
+      "path": "~/Structures that will spawn if not graceful"
+    },
+    {
+      "name": "Sign1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sign_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure/sign_1.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/sign_1.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/sign_1.json"
+        ]
+      },
+      "path": "~/Structures that will spawn if not graceful"
+    },
+    {
+      "name": "Nonexistent",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nonexistent",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/configured_feature/nonexistent_tree.json",
+          "src/main/resources/data/recollection/worldgen/placed_feature/nonexistent_tree.json",
+          "src/main/resources/data/recollection/worldgen/biome/nonexistent.json"
+        ]
+      },
+      "path": "~/Structures that will spawn if not graceful"
+    },
+    {
+      "name": "Spawnstructurepyrimid",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnstructurepyrimid",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/SpawnstructurepyrimidProcedure.java"
+        ]
+      },
+      "path": "~/Events"
+    },
+    {
+      "name": "Perimid",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perimid",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure_set/perimid.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/perimid.json",
+          "src/main/resources/data/recollection/worldgen/structure/perimid.json"
+        ]
+      },
+      "path": "~/Structures that will spawn if not graceful"
     }
   ],
   "variable_elements": [
@@ -1005,8 +1236,12 @@
     }
   ],
   "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Heart"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:Elsewhere"
     ]
   },
   "tab_element_order": {},
@@ -1025,34 +1260,37 @@
       "gui.recollection.titlescreen_4.label_save_us": "save us",
       "advancements.him.title": "_",
       "advancements.him.descr": ".....................",
-      "gui.recollection.titlescreen_9.label_leave_the_game": "THE COLLECTION KILLED US ALL",
-      "gamerule.graceful.description": "they welcome you",
-      "biome.recollection.elsewhere": "Elsewhere",
-      "gui.recollection.titlescreen_8.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
-      "gamerule.graceful": "graceful",
-      "block.recollection.collected": "Collected",
+      "gui.recollection.titlescreen_5.label_save_us": "save us",
       "gui.recollection.titlescreen_6.label_save_us": "save us",
       "gui.recollection.titlescreen_7.label_leave_the_game": "LEAVE THE GAME",
+      "gui.recollection.titlescreen_8.label_leave_the_game": "-.. --- -. - / - .-. ..- ... - / .... .. --",
+      "gui.recollection.titlescreen_9.label_leave_the_game": "THE COLLECTION KILLED US ALL",
+      "gamerule.graceful.description": "they welcome you",
+      "gamerule.graceful": "graceful",
+      "block.recollection.collected": "Collected",
+      "biome.recollection.elsewhere": "Elsewhere",
       "subtitles.notification": "Mission",
-      "gui.recollection.titlescreen_5.label_save_us": "save us"
+      "block.recollection.heart": "Heart",
+      "entity.recollection.snowed_in": "Snowed In",
+      "item.recollection.snowed_in_spawn_egg": "Snowed In Spawn Egg"
     }
   },
   "metadata": {
     "files": [
-      "src/main/resources/assets/recollection/sounds.json",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModSounds.java",
-      "src/main/java/net/mcreator/recollection/RecollectionMod.java",
       "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModTabs.java",
-      "src/main/resources/META-INF/mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/recollection/init/RecollectionModModels.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModSounds.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModTabs.java",
+      "src/main/resources/assets/recollection/sounds.json",
+      "src/main/java/net/mcreator/recollection/RecollectionMod.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
-      "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
+      "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModGameRules.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModParticles.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModParticleTypes.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModParticles.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModEntityRenderers.java",
@@ -1079,14 +1317,6 @@
         "children": []
       },
       {
-        "name": "GracePeriod",
-        "children": []
-      },
-      {
-        "name": "Entities",
-        "children": []
-      },
-      {
         "name": "Custom Code",
         "children": [
           {
@@ -1104,15 +1334,27 @@
         "children": []
       },
       {
+        "name": "Structures that will spawn if not graceful",
+        "children": []
+      },
+      {
+        "name": "Events",
+        "children": []
+      },
+      {
+        "name": "GracePeriod",
+        "children": []
+      },
+      {
+        "name": "Entities",
+        "children": []
+      },
+      {
         "name": "IngameUI",
         "children": []
       },
       {
         "name": "WorldWarning",
-        "children": []
-      },
-      {
-        "name": "Events",
         "children": []
       }
     ]
