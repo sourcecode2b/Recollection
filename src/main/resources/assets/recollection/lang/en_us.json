@@ -24,5 +24,10 @@
   "subtitles.notification": "Mission",
   "block.recollection.heart": "Heart",
   "entity.recollection.snowed_in": "Snowed In",
-  "item.recollection.snowed_in_spawn_egg": "Snowed In Spawn Egg"
+  "item.recollection.snowed_in_spawn_egg": "Snowed In Spawn Egg",
+  "gamerule.heartneedtobeDestroyied": "heartneedtobedestroyed",
+  "gamerule.heartneedtobeDestroyied.description": "doit",
+  "entity.recollection.seeker": "Seeker",
+  "item.recollection.seeker_spawn_egg": "Seeker Spawn Egg",
+  "biome.recollection.nonexistent": "Nonexistent"
 }

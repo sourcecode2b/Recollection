@@ -8,11 +8,11 @@
       "registry_name": "voide",
       "metadata": {
         "files": [
-          "src/main/resources/assets/recollection/models/item/voide.json",
           "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
-          "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
+          "src/main/resources/assets/recollection/models/block/voide.json",
           "src/main/resources/assets/recollection/blockstates/voide.json",
-          "src/main/resources/assets/recollection/models/block/voide.json"
+          "src/main/resources/assets/recollection/models/item/voide.json",
+          "src/main/resources/data/recollection/loot_tables/blocks/voide.json"
         ]
       },
       "path": "~/Blocks"
@@ -217,7 +217,7 @@
     {
       "name": "UnknownActivity",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "unknown_activity",
       "metadata": {
@@ -422,7 +422,7 @@
     {
       "name": "Collected",
       "type": "block",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "collected",
       "metadata": {
@@ -479,8 +479,8 @@
       "registry_name": "eyeball",
       "metadata": {
         "files": [
-          "src/main/resources/assets/recollection/particles/eyeball.json",
-          "src/main/java/net/mcreator/recollection/client/particle/EyeballParticle.java"
+          "src/main/java/net/mcreator/recollection/client/particle/EyeballParticle.java",
+          "src/main/resources/assets/recollection/particles/eyeball.json"
         ]
       }
     },
@@ -724,7 +724,7 @@
     {
       "name": "Heart",
       "type": "block",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "heart",
       "metadata": {
@@ -872,7 +872,7 @@
     {
       "name": "SnowedIn",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "snowed_in",
       "metadata": {
@@ -998,7 +998,7 @@
     {
       "name": "Seeker",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "seeker",
       "metadata": {
@@ -1272,7 +1272,12 @@
       "subtitles.notification": "Mission",
       "block.recollection.heart": "Heart",
       "entity.recollection.snowed_in": "Snowed In",
-      "item.recollection.snowed_in_spawn_egg": "Snowed In Spawn Egg"
+      "item.recollection.snowed_in_spawn_egg": "Snowed In Spawn Egg",
+      "gamerule.heartneedtobeDestroyied": "heartneedtobedestroyed",
+      "gamerule.heartneedtobeDestroyied.description": "doit",
+      "entity.recollection.seeker": "Seeker",
+      "item.recollection.seeker_spawn_egg": "Seeker Spawn Egg",
+      "biome.recollection.nonexistent": "Nonexistent"
     }
   },
   "metadata": {
