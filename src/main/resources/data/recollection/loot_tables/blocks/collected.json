@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "recollection:blocks/collected",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "recollection:collected"
+        }
+      ]
+    }
+  ]
+}

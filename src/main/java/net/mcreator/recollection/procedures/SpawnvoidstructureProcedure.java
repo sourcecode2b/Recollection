@@ -6,8 +6,11 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.ExperienceOrb;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.recollection.init.RecollectionModGameRules;
 import net.mcreator.recollection.init.RecollectionModBlocks;
 
 import javax.annotation.Nullable;
@@ -27,16 +30,21 @@ public class SpawnvoidstructureProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
 		if (Math.random() > 0.99999999) {
-			world.setBlock(BlockPos.containing(x, y, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			world.setBlock(BlockPos.containing(x, y + 1, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			world.setBlock(BlockPos.containing(x, y + 2, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			world.setBlock(BlockPos.containing(x, y + 3, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			world.setBlock(BlockPos.containing(x, y + 4, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			world.setBlock(BlockPos.containing(x, y + 5, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			world.setBlock(BlockPos.containing(x, y + 6, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			world.setBlock(BlockPos.containing(x, y + 7, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			world.setBlock(BlockPos.containing(x, y + 8, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
-			world.setBlock(BlockPos.containing(x, y + 9, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			if (world.getLevelData().getGameRules().getBoolean(RecollectionModGameRules.GRACEFUL) == false) {
+				world.setBlock(BlockPos.containing(x, y, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 1, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 2, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 3, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 4, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 5, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 6, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 7, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 8, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y + 9, z + 30), RecollectionModBlocks.VOIDE.get().defaultBlockState(), 3);
+			} else {
+				if (world instanceof ServerLevel _level)
+					_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, 2));
+			}
 		}
 	}
 }

@@ -8,7 +8,7 @@
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
-    "doesPauseGame": true,
+    "doesPauseGame": false,
     "components": [
       {
         "type": "button",
@@ -21,8 +21,8 @@
           },
           "width": 56,
           "height": 20,
-          "x": 360,
-          "y": 210,
+          "x": 15,
+          "y": 207,
           "locked": false
         }
       },
@@ -37,7 +37,7 @@
           },
           "width": 77,
           "height": 20,
-          "x": 20,
+          "x": 341,
           "y": 207,
           "locked": false
         }
@@ -87,40 +87,10 @@
       {
         "type": "image",
         "data": {
-          "image": "red-blood-cells.jpg.png",
-          "use1Xscale": false,
-          "x": -79,
-          "y": 234,
-          "locked": false
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "red-blood-cells.jpg.png",
-          "use1Xscale": false,
-          "x": 421,
-          "y": -60,
-          "locked": false
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "red-blood-cells.jpg.png",
+          "image": "13530476-cover_xl.png",
           "use1Xscale": false,
           "x": -77,
           "y": -530,
-          "locked": false
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "red-blood-cells.jpg.png",
-          "use1Xscale": false,
-          "x": -754,
-          "y": -36,
           "locked": false
         }
       }
