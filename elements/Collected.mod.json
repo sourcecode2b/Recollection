@@ -127,6 +127,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "CollectedEntityWalksOnTheBlock"
+    },
+    "onEntityCollides": {
+      "name": "CollectedEntityWalksOnTheBlock"
+    },
+    "onEntityWalksOn": {
+      "name": "CollectedEntityWalksOnTheBlock"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

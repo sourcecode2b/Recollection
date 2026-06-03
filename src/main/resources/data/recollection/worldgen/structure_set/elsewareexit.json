@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "recollection:elsewareexit",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 16,
+    "separation": 14,
+    "salt": 1285881755
+  }
+}

@@ -445,6 +445,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -526,6 +530,119 @@
         ]
       },
       "path": "~/testing"
+    },
+    {
+      "name": "Elsewhere",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elsewhere",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/placed_feature/elsewhere_tree.json",
+          "src/main/resources/data/recollection/worldgen/biome/elsewhere.json",
+          "src/main/resources/data/recollection/worldgen/configured_feature/elsewhere_tree.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "Elsewheree",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elsewheree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/recollection/world/dimension/ElsewhereeDimension.java",
+          "src/main/resources/data/recollection/dimension_type/elsewheree.json",
+          "src/main/resources/data/recollection/dimension/elsewheree.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "Elseware",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elseware",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure_set/elseware.json",
+          "src/main/resources/data/recollection/worldgen/structure/elseware.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/elseware.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "Elsewarebook",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elsewarebook",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure/elsewarebook.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/elsewarebook.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/elsewarebook.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "Elsewareexit",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elsewareexit",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/template_pool/elsewareexit.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/elsewareexit.json",
+          "src/main/resources/data/recollection/worldgen/structure/elsewareexit.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "VoideOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voide_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/VoideOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CollectedEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "collected_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/CollectedEntityWalksOnTheBlockProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -543,7 +660,12 @@
     }
   ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0",
+      "~Blocks.SNOW"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
@@ -567,7 +689,8 @@
       "gui.recollection.titlescreen_9.label_leave_the_game": "THE COLLECTION KILLED US ALL",
       "gamerule.graceful.description": "they welcome you",
       "gamerule.graceful": "graceful",
-      "block.recollection.collected": "Collected"
+      "block.recollection.collected": "Collected",
+      "biome.recollection.elsewhere": "Elsewhere"
     }
   },
   "metadata": {
@@ -625,6 +748,10 @@
       },
       {
         "name": "GracePeriod",
+        "children": []
+      },
+      {
+        "name": "Dimension1elsewhere",
         "children": []
       }
     ]
