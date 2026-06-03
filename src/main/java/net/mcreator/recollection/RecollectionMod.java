@@ -21,6 +21,7 @@ import net.mcreator.recollection.init.RecollectionModTabs;
 import net.mcreator.recollection.init.RecollectionModParticleTypes;
 import net.mcreator.recollection.init.RecollectionModMenus;
 import net.mcreator.recollection.init.RecollectionModItems;
+import net.mcreator.recollection.init.RecollectionModEntities;
 import net.mcreator.recollection.init.RecollectionModBlocks;
 
 import java.util.function.Supplier;
@@ -46,6 +47,7 @@ public class RecollectionMod {
 		RecollectionModBlocks.REGISTRY.register(bus);
 
 		RecollectionModItems.REGISTRY.register(bus);
+		RecollectionModEntities.REGISTRY.register(bus);
 
 		RecollectionModTabs.REGISTRY.register(bus);
 
