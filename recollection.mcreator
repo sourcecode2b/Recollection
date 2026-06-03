@@ -340,7 +340,7 @@
           "src/main/java/net/mcreator/recollection/procedures/JoinshowthatguiProcedure.java"
         ]
       },
-      "path": "~/WorldWarning"
+      "path": "~/whenyoujoin"
     },
     {
       "name": "Titlescreen5",
@@ -482,8 +482,7 @@
           "src/main/resources/assets/recollection/particles/eyeball.json",
           "src/main/java/net/mcreator/recollection/client/particle/EyeballParticle.java"
         ]
-      },
-      "path": "~/Dimension1elsewhere"
+      }
     },
     {
       "name": "Spawneyeballssurroundingyou",
@@ -517,8 +516,7 @@
         "files": [
           "src/main/java/net/mcreator/recollection/procedures/SpawneyeballssurroundingyouProcedure.java"
         ]
-      },
-      "path": "~/Dimension1elsewhere"
+      }
     },
     {
       "name": "Eyeballtest",
@@ -741,6 +739,52 @@
       "path": "~/Blocks"
     },
     {
+      "name": "HeartneedtobeDestroyied",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heartneedtobe_destroyied",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/Gamerules"
+    },
+    {
+      "name": "SnowedInOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snowed_in_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/recollection/procedures/SnowedInOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "E3",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "e_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/structure_set/e_3.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/e_3.json",
+          "src/main/resources/data/recollection/worldgen/structure/e_3.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
       "name": "Listentothebadguy",
       "type": "procedure",
       "compiles": true,
@@ -776,41 +820,6 @@
       "path": "~/whenyoujoin"
     },
     {
-      "name": "SnowedIn",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "snowed_in",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/recollection/forge/biome_modifier/snowed_in_biome_modifier.json",
-          "src/main/java/net/mcreator/recollection/entity/SnowedInEntity.java",
-          "src/main/java/net/mcreator/recollection/client/renderer/SnowedInRenderer.java",
-          "src/main/resources/assets/recollection/models/item/snowed_in_spawn_egg.json"
-        ]
-      },
-      "path": "~/Entities"
-    },
-    {
-      "name": "SnowedInOnInitialEntitySpawn",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "snowed_in_on_initial_entity_spawn",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/recollection/procedures/SnowedInOnInitialEntitySpawnProcedure.java"
-        ]
-      },
-      "path": "~/Dimension1elsewhere"
-    },
-    {
       "name": "SnowedInOnEntityTickUpdate",
       "type": "procedure",
       "compiles": true,
@@ -844,6 +853,37 @@
         ]
       },
       "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "E6",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "e_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/worldgen/template_pool/e_6.json",
+          "src/main/resources/data/recollection/worldgen/structure/e_6.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/e_6.json"
+        ]
+      },
+      "path": "~/Dimension1elsewhere"
+    },
+    {
+      "name": "SnowedIn",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snowed_in",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/recollection/forge/biome_modifier/snowed_in_biome_modifier.json",
+          "src/main/java/net/mcreator/recollection/entity/SnowedInEntity.java",
+          "src/main/java/net/mcreator/recollection/client/renderer/SnowedInRenderer.java",
+          "src/main/resources/assets/recollection/models/item/snowed_in_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities"
     },
     {
       "name": "HeartBlockDestroyedByPlayer",
@@ -896,16 +936,16 @@
       "path": "~/Dimension1elsewhere"
     },
     {
-      "name": "E81",
+      "name": "E9",
       "type": "structure",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "e_81",
+      "registry_name": "e_9",
       "metadata": {
         "files": [
-          "src/main/resources/data/recollection/worldgen/structure_set/e_81.json",
-          "src/main/resources/data/recollection/worldgen/template_pool/e_81.json",
-          "src/main/resources/data/recollection/worldgen/structure/e_81.json"
+          "src/main/resources/data/recollection/worldgen/template_pool/e_9.json",
+          "src/main/resources/data/recollection/worldgen/structure/e_9.json",
+          "src/main/resources/data/recollection/worldgen/structure_set/e_9.json"
         ]
       },
       "path": "~/Dimension1elsewhere"
@@ -941,61 +981,19 @@
       "path": "~/Dimension1elsewhere"
     },
     {
-      "name": "E3",
+      "name": "E81",
       "type": "structure",
       "compiles": true,
       "locked_code": true,
-      "registry_name": "e_3",
+      "registry_name": "e_81",
       "metadata": {
         "files": [
-          "src/main/resources/data/recollection/worldgen/structure_set/e_3.json",
-          "src/main/resources/data/recollection/worldgen/template_pool/e_3.json",
-          "src/main/resources/data/recollection/worldgen/structure/e_3.json"
+          "src/main/resources/data/recollection/worldgen/structure_set/e_81.json",
+          "src/main/resources/data/recollection/worldgen/template_pool/e_81.json",
+          "src/main/resources/data/recollection/worldgen/structure/e_81.json"
         ]
       },
       "path": "~/Dimension1elsewhere"
-    },
-    {
-      "name": "E9",
-      "type": "structure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "e_9",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/recollection/worldgen/template_pool/e_9.json",
-          "src/main/resources/data/recollection/worldgen/structure/e_9.json",
-          "src/main/resources/data/recollection/worldgen/structure_set/e_9.json"
-        ]
-      },
-      "path": "~/Dimension1elsewhere"
-    },
-    {
-      "name": "E6",
-      "type": "structure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "e_6",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/recollection/worldgen/template_pool/e_6.json",
-          "src/main/resources/data/recollection/worldgen/structure/e_6.json",
-          "src/main/resources/data/recollection/worldgen/structure_set/e_6.json"
-        ]
-      },
-      "path": "~/Dimension1elsewhere"
-    },
-    {
-      "name": "HeartneedtobeDestroyied",
-      "type": "gamerule",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "heartneedtobe_destroyied",
-      "metadata": {
-        "type": "logic",
-        "files": []
-      },
-      "path": "~/Gamerules"
     }
   ],
   "variable_elements": [
@@ -1023,9 +1021,9 @@
     }
   ],
   "tag_elements": {
-    "BLOCKS:minecraft:overworld_carver_replaceables": [],
-    "BIOMES:minecraft:has_structure/shipwreck_beached": [
-      "~CUSTOM:Elsewhere"
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0",
+      "~Blocks.SNOW"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Heart"
@@ -1056,34 +1054,24 @@
       "gamerule.graceful": "graceful",
       "block.recollection.collected": "Collected",
       "biome.recollection.elsewhere": "Elsewhere",
-      "block.recollection.heart": "Heart",
-      "entity.recollection.snowed_in": "Snowed In",
-      "item.recollection.snowed_in_spawn_egg": "Snowed In Spawn Egg",
-      "gamerule.heartneedtobeDestroyied": "heartneedtobedestroyed",
-      "gamerule.heartneedtobeDestroyied.description": "doit",
       "subtitles.notification": "Mission"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/recollection/init/RecollectionModTabs.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/mods.toml",
-      "src/main/resources/assets/recollection/sounds.json",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModTabs.java",
       "src/main/java/net/mcreator/recollection/RecollectionMod.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModModels.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModSounds.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
       "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModGameRules.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModParticleTypes.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModParticles.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModEntityRenderers.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModEntities.java"
+      "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
     ]
   },
   "foldersRoot": {
@@ -1095,6 +1083,10 @@
       },
       {
         "name": "testing",
+        "children": []
+      },
+      {
+        "name": "Gamerules",
         "children": []
       },
       {
@@ -1127,19 +1119,15 @@
         "children": []
       },
       {
+        "name": "IngameUI",
+        "children": []
+      },
+      {
         "name": "WorldWarning",
         "children": []
       },
       {
         "name": "Events",
-        "children": []
-      },
-      {
-        "name": "IngameUI",
-        "children": []
-      },
-      {
-        "name": "Gamerules",
         "children": []
       }
     ]

@@ -1,24 +1,6 @@
 package net.mcreator.recollection.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.GameType;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.core.BlockPos;
-import net.minecraft.commands.arguments.EntityAnchorArgument;
-
-import net.mcreator.recollection.init.RecollectionModParticleTypes;
-import net.mcreator.recollection.init.RecollectionModGameRules;
-import net.mcreator.recollection.init.RecollectionModBlocks;
-import net.mcreator.recollection.RecollectionMod;
+import net.minecraftforge.eventbus.api.Event;
 
 public class HeartBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
