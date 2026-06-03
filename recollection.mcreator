@@ -1039,11 +1039,14 @@
   },
   "metadata": {
     "files": [
+      "src/main/resources/assets/recollection/sounds.json",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModSounds.java",
       "src/main/java/net/mcreator/recollection/RecollectionMod.java",
       "src/main/java/net/mcreator/recollection/network/RecollectionModVariables.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModTabs.java",
       "src/main/resources/META-INF/mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModModels.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModScreens.java",
       "src/main/java/net/mcreator/recollection/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModMenus.java",
@@ -1051,7 +1054,9 @@
       "src/main/java/net/mcreator/recollection/init/RecollectionModParticles.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModParticleTypes.java",
       "src/main/java/net/mcreator/recollection/init/RecollectionModBlocks.java",
-      "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java"
+      "src/main/java/net/mcreator/recollection/init/RecollectionModItems.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModEntityRenderers.java",
+      "src/main/java/net/mcreator/recollection/init/RecollectionModEntities.java"
     ]
   },
   "foldersRoot": {
