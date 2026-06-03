@@ -15,8 +15,8 @@ import net.mcreator.recollection.RecollectionMod;
 
 public class RecollectionModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, RecollectionMod.MODID);
-	public static final RegistryObject<Block> VOIDE = REGISTRY.register("voide", () -> new VoideBlock());
-	public static final RegistryObject<Block> COLLECTED = REGISTRY.register("collected", () -> new CollectedBlock());
+	public static final RegistryObject<Block> VOIDE = REGISTRY.register("voide", VoideBlock::new);
+	public static final RegistryObject<Block> COLLECTED = REGISTRY.register("collected", CollectedBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
