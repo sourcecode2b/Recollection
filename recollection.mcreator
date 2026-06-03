@@ -8,11 +8,11 @@
       "registry_name": "voide",
       "metadata": {
         "files": [
-          "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
-          "src/main/resources/assets/recollection/models/block/voide.json",
-          "src/main/resources/assets/recollection/blockstates/voide.json",
+          "src/main/resources/assets/recollection/models/item/voide.json",
           "src/main/java/net/mcreator/recollection/block/VoideBlock.java",
-          "src/main/resources/assets/recollection/models/item/voide.json"
+          "src/main/resources/data/recollection/loot_tables/blocks/voide.json",
+          "src/main/resources/assets/recollection/blockstates/voide.json",
+          "src/main/resources/assets/recollection/models/block/voide.json"
         ]
       },
       "path": "~/Blocks"
@@ -218,7 +218,7 @@
       "name": "UnknownActivity",
       "type": "gui",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "unknown_activity",
       "metadata": {
         "files": [
@@ -427,11 +427,11 @@
       "registry_name": "collected",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/recollection/block/CollectedBlock.java",
-          "src/main/resources/data/recollection/loot_tables/blocks/collected.json",
-          "src/main/resources/assets/recollection/models/item/collected.json",
+          "src/main/resources/assets/recollection/models/block/collected.json",
           "src/main/resources/assets/recollection/blockstates/collected.json",
-          "src/main/resources/assets/recollection/models/block/collected.json"
+          "src/main/resources/assets/recollection/models/item/collected.json",
+          "src/main/resources/data/recollection/loot_tables/blocks/collected.json",
+          "src/main/java/net/mcreator/recollection/block/CollectedBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -539,9 +539,9 @@
       "registry_name": "elsewhere",
       "metadata": {
         "files": [
+          "src/main/resources/data/recollection/worldgen/configured_feature/elsewhere_tree.json",
           "src/main/resources/data/recollection/worldgen/placed_feature/elsewhere_tree.json",
-          "src/main/resources/data/recollection/worldgen/biome/elsewhere.json",
-          "src/main/resources/data/recollection/worldgen/configured_feature/elsewhere_tree.json"
+          "src/main/resources/data/recollection/worldgen/biome/elsewhere.json"
         ]
       },
       "path": "~/Dimension1elsewhere"
@@ -721,9 +721,9 @@
   ],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.STONE#0",
-      "~Blocks.SNOW"
+    "BLOCKS:minecraft:overworld_carver_replaceables": [],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:Elsewhere"
     ]
   },
   "tab_element_order": {},
