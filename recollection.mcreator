@@ -217,7 +217,7 @@
     {
       "name": "UnknownActivity",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "unknown_activity",
       "metadata": {
@@ -487,7 +487,7 @@
     {
       "name": "Spawneyeballssurroundingyou",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "spawneyeballssurroundingyou",
       "metadata": {
@@ -609,7 +609,7 @@
     {
       "name": "VoideOnBlockRightClicked",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "voide_on_block_right_clicked",
       "metadata": {
@@ -753,7 +753,7 @@
     {
       "name": "SnowedInOnInitialEntitySpawn",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "snowed_in_on_initial_entity_spawn",
       "metadata": {
@@ -787,7 +787,7 @@
     {
       "name": "Listentothebadguy",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "listentothebadguy",
       "metadata": {
@@ -822,7 +822,7 @@
     {
       "name": "SnowedInOnEntityTickUpdate",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "snowed_in_on_entity_tick_update",
       "metadata": {
@@ -888,7 +888,7 @@
     {
       "name": "HeartBlockDestroyedByPlayer",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "heart_block_destroyed_by_player",
       "metadata": {
