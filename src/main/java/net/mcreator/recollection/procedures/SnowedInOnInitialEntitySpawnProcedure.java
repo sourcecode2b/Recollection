@@ -1,6 +1,6 @@
 package net.mcreator.recollection.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.Entity;
 
 public class SnowedInOnInitialEntitySpawnProcedure {
 	public static void execute(Entity entity) {

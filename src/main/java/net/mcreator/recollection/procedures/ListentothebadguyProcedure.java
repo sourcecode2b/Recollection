@@ -1,6 +1,27 @@
 package net.mcreator.recollection.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.recollection.init.RecollectionModBlocks;
+import net.mcreator.recollection.WindowsMessageBox;
+import net.mcreator.recollection.RecollectionMod;
+
+import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class ListentothebadguyProcedure {
@@ -29,7 +50,7 @@ public class ListentothebadguyProcedure {
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7cdetrats uoy erehw ot kcab og"), false);
 			});
-			RecollectionMod.queueServerWork(320, () -> {
+			RecollectionMod.queueServerWork(8600, () -> {
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.COBBLESTONE.defaultBlockState(), 3);
 				world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.COBBLESTONE.defaultBlockState(), 3);
 				world.setBlock(BlockPos.containing(x, y + 2, z), Blocks.COBBLESTONE.defaultBlockState(), 3);
@@ -59,7 +80,7 @@ public class ListentothebadguyProcedure {
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7csu evas dna"), false);
 				});
-				RecollectionMod.queueServerWork(360, () -> {
+				RecollectionMod.queueServerWork(8850, () -> {
 					WindowsMessageBox.show("???", "break the heart.");
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {

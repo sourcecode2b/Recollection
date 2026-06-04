@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "recollection:sign_12",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 15,
+    "separation": 8,
+    "salt": 2076266974
+  }
+}

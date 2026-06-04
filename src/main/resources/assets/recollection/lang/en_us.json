@@ -21,5 +21,11 @@
   "gamerule.graceful": "graceful",
   "block.recollection.collected": "Collected",
   "biome.recollection.elsewhere": "Elsewhere",
-  "subtitles.notification": "Mission"
+  "subtitles.notification": "Mission",
+  "block.recollection.heart": "Heart",
+  "gamerule.heartneedtobeDestroyied": "heartneedtobedestroyed",
+  "gamerule.heartneedtobeDestroyied.description": "doit",
+  "entity.recollection.snowed_in": "Snowed In",
+  "item.recollection.snowed_in_spawn_egg": "Snowed In Spawn Egg",
+  "biome.recollection.nonexistent": "Nonexistent"
 }
