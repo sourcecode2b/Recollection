@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.recollection.client.renderer.SteveRenderer;
 import net.mcreator.recollection.client.renderer.SnowedInRenderer;
 import net.mcreator.recollection.client.renderer.SeekerRenderer;
 
@@ -17,5 +18,6 @@ public class RecollectionModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(RecollectionModEntities.SNOWED_IN.get(), SnowedInRenderer::new);
 		event.registerEntityRenderer(RecollectionModEntities.SEEKER.get(), SeekerRenderer::new);
+		event.registerEntityRenderer(RecollectionModEntities.STEVE.get(), SteveRenderer::new);
 	}
 }

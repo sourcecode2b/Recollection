@@ -7,5 +7,23 @@
         "stream": false
       }
     ]
+  },
+  "seekerscream": {
+    "subtitle": "subtitles.seekerscream",
+    "sounds": [
+      {
+        "name": "recollection:audiomass-output-_5_",
+        "stream": true
+      }
+    ]
+  },
+  "snowabeince": {
+    "subtitle": "subtitles.snowabeince",
+    "sounds": [
+      {
+        "name": "recollection:freesound_community-wind-during-snow-storm-2-17562_1",
+        "stream": false
+      }
+    ]
   }
 }

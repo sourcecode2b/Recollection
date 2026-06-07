@@ -3,6 +3,8 @@ package net.mcreator.recollection.procedures;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
@@ -22,6 +24,8 @@ public class CollectedEntityWalksOnTheBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		if (entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+			_livingEntity0.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.08);
 		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("recollection:elsewheree"));
 			if (_player.level().dimension() == destinationType)

@@ -32,7 +32,7 @@ public class UnknownActivityScreen extends AbstractContainerScreen<UnknownActivi
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 450;
-		this.imageHeight = 247;
+		this.imageHeight = 300;
 	}
 
 	@Override
@@ -56,8 +56,8 @@ public class UnknownActivityScreen extends AbstractContainerScreen<UnknownActivi
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(ResourceLocation.parse("recollection:textures/screens/end_poem_background.png"), this.leftPos + 11, this.topPos + 3, 0, 0, 427, 240, 427, 240);
-		guiGraphics.blit(ResourceLocation.parse("recollection:textures/screens/13530476-cover_xl.png"), this.leftPos + -66, this.topPos + -527, 0, 0, -1, -1, -1, -1);
+		guiGraphics.blit(ResourceLocation.parse("recollection:textures/screens/end_poem_background.png"), this.leftPos + 11, this.topPos + 30, 0, 0, 427, 240, 427, 240);
+		guiGraphics.blit(ResourceLocation.parse("recollection:textures/screens/13530476-cover_xl.png"), this.leftPos + -66, this.topPos + -500, 0, 0, -1, -1, -1, -1);
 		RenderSystem.disableBlend();
 	}
 
@@ -72,8 +72,8 @@ public class UnknownActivityScreen extends AbstractContainerScreen<UnknownActivi
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.recollection.unknown_activity.label_empty"), 33, 20, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.recollection.unknown_activity.label_is_it_true_you_wish_to_proceed"), 33, 38, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.recollection.unknown_activity.label_empty"), 33, 47, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.recollection.unknown_activity.label_is_it_true_you_wish_to_proceed"), 33, 65, -1, false);
 	}
 
 	@Override
@@ -86,7 +86,7 @@ public class UnknownActivityScreen extends AbstractContainerScreen<UnknownActivi
 				RecollectionMod.PACKET_HANDLER.sendToServer(new UnknownActivityButtonMessage(0, x, y, z));
 				UnknownActivityButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 26, this.topPos + 210, 56, 20).build();
+		}).bounds(this.leftPos + 26, this.topPos + 237, 56, 20).build();
 		this.addRenderableWidget(button_cancel);
 		button_proceed = Button.builder(Component.translatable("gui.recollection.unknown_activity.button_proceed"), e -> {
 			int x = UnknownActivityScreen.this.x;
@@ -95,7 +95,7 @@ public class UnknownActivityScreen extends AbstractContainerScreen<UnknownActivi
 				RecollectionMod.PACKET_HANDLER.sendToServer(new UnknownActivityButtonMessage(1, x, y, z));
 				UnknownActivityButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 352, this.topPos + 210, 77, 20).build();
+		}).bounds(this.leftPos + 352, this.topPos + 237, 77, 20).build();
 		this.addRenderableWidget(button_proceed);
 	}
 }

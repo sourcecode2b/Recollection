@@ -15,6 +15,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.recollection.entity.SteveEntity;
 import net.mcreator.recollection.entity.SnowedInEntity;
 import net.mcreator.recollection.entity.SeekerEntity;
 import net.mcreator.recollection.RecollectionMod;
@@ -25,7 +26,11 @@ public class RecollectionModEntities {
 	public static final RegistryObject<EntityType<SnowedInEntity>> SNOWED_IN = register("snowed_in",
 			EntityType.Builder.<SnowedInEntity>of(SnowedInEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SnowedInEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SeekerEntity>> SEEKER = register("seeker",
-			EntityType.Builder.<SeekerEntity>of(SeekerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SeekerEntity::new)
+			EntityType.Builder.<SeekerEntity>of(SeekerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(700).setUpdateInterval(3).setCustomClientFactory(SeekerEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SteveEntity>> STEVE = register("steve",
+			EntityType.Builder.<SteveEntity>of(SteveEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SteveEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -40,6 +45,7 @@ public class RecollectionModEntities {
 		event.enqueueWork(() -> {
 			SnowedInEntity.init();
 			SeekerEntity.init();
+			SteveEntity.init();
 		});
 	}
 
@@ -47,5 +53,6 @@ public class RecollectionModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(SNOWED_IN.get(), SnowedInEntity.createAttributes().build());
 		event.put(SEEKER.get(), SeekerEntity.createAttributes().build());
+		event.put(STEVE.get(), SteveEntity.createAttributes().build());
 	}
 }

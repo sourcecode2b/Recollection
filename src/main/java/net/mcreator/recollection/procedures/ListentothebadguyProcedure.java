@@ -9,6 +9,7 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
@@ -64,32 +65,34 @@ public class ListentothebadguyProcedure {
 				world.setBlock(BlockPos.containing(x, y + 10, z), Blocks.COBBLESTONE.defaultBlockState(), 3);
 				world.setBlock(BlockPos.containing(x, y + 11, z), Blocks.REDSTONE_TORCH.defaultBlockState(), 3);
 				world.setBlock(BlockPos.containing(x, y - 50, z), RecollectionModBlocks.HEART.get().defaultBlockState(), 3);
-				RecollectionMod.queueServerWork(8600, () -> {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7cskcolb 05 nwod gid dna"), false);
-				});
-				RecollectionMod.queueServerWork(8650, () -> {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7couy rof ti dekram i"), false);
-				});
-				RecollectionMod.queueServerWork(8700, () -> {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7ctraeh eht kaerb ot deen lliw uoy neht"), false);
-				});
-				RecollectionMod.queueServerWork(8800, () -> {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7csu evas dna"), false);
-				});
-				RecollectionMod.queueServerWork(8850, () -> {
-					WindowsMessageBox.show("???", "break the heart.");
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("recollection:notification")), SoundSource.MUSIC, 1, 1);
-						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("recollection:notification")), SoundSource.MUSIC, 1, 1, false);
-						}
+			});
+			RecollectionMod.queueServerWork(8600, () -> {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("destroy the heart at the start of the world."), true);
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7cskcolb 05 nwod gid dna"), false);
+			});
+			RecollectionMod.queueServerWork(8650, () -> {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7couy rof ti dekram i"), false);
+			});
+			RecollectionMod.queueServerWork(8700, () -> {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7ctraeh eht kaerb ot deen lliw uoy neht"), false);
+			});
+			RecollectionMod.queueServerWork(8800, () -> {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7csu evas dna"), false);
+			});
+			RecollectionMod.queueServerWork(8850, () -> {
+				WindowsMessageBox.show("???", "break the heart.");
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("recollection:notification")), SoundSource.MUSIC, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("recollection:notification")), SoundSource.MUSIC, 1, 1, false);
 					}
-				});
+				}
 			});
 		} else {
 			if (world instanceof ServerLevel _level)

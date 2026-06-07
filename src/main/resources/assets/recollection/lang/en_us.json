@@ -29,5 +29,13 @@
   "gamerule.heartneedtobeDestroyied.description": "doit",
   "entity.recollection.seeker": "Seeker",
   "item.recollection.seeker_spawn_egg": "Seeker Spawn Egg",
-  "biome.recollection.nonexistent": "Nonexistent"
+  "biome.recollection.nonexistent": "Nonexistent",
+  "subtitles.seekerscream": "RUN",
+  "subtitles.snowabeince": "snow",
+  "item.recollection.shard_of_a_broken_portal.description_0": "first part of the puzzle",
+  "item.recollection.shard_of_a_broken_portal": "Shard Of A Broken Portal",
+  "effect.recollection.cold": "Cold",
+  "item.recollection.shard_of_a_broken_portal.description_1": "KEEP IT",
+  "entity.recollection.steve": "Steve",
+  "item.recollection.steve_spawn_egg": "Steve Spawn Egg"
 }

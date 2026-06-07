@@ -20,5 +20,6 @@ public class RecollectionModTabs {
 				tabData.accept(RecollectionModBlocks.VOIDE.get().asItem());
 				tabData.accept(RecollectionModItems.SNOWED_IN_SPAWN_EGG.get());
 				tabData.accept(RecollectionModItems.SEEKER_SPAWN_EGG.get());
+				tabData.accept(RecollectionModItems.STEVE_SPAWN_EGG.get());
 			}).build());
 }

@@ -13,11 +13,11 @@
       "value": "Blocks.GRAVEL"
     },
     "fogColor": {
-      "value": -16764109,
+      "value": -6697729,
       "falpha": 0.0
     },
     "ambientSound": {
-      "value": ""
+      "value": "CUSTOM:snowabeince"
     },
     "additionsSound": {
       "value": ""
@@ -33,7 +33,7 @@
     "particleToSpawn": {
       "value": "CUSTOM:Eyeball"
     },
-    "particlesProbability": 0.5,
+    "particlesProbability": 0.1,
     "rainingPossibility": 1.0,
     "temperature": 0.1,
     "spawnBiome": false,

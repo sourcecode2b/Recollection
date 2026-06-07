@@ -152,5 +152,13 @@ public class HeartBlockDestroyedByPlayerProcedure {
 		RecollectionMod.queueServerWork(170, () -> {
 			world.setBlock(BlockPos.containing(x, y - 6, z - 1), RecollectionModBlocks.COLLECTED.get().defaultBlockState(), 3);
 		});
+		RecollectionMod.queueServerWork(2000, () -> {
+			world.setBlock(BlockPos.containing(x, y - 6, z - 1), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y - 6, z + 1), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x - 1, y - 6, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x + 1, y - 6, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x - 1, y - 6, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y - 6, z), Blocks.AIR.defaultBlockState(), 3);
+		});
 	}
 }

@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.recollection.init.RecollectionModTabs;
 import net.mcreator.recollection.init.RecollectionModSounds;
 import net.mcreator.recollection.init.RecollectionModParticleTypes;
+import net.mcreator.recollection.init.RecollectionModMobEffects;
 import net.mcreator.recollection.init.RecollectionModMenus;
 import net.mcreator.recollection.init.RecollectionModItems;
 import net.mcreator.recollection.init.RecollectionModEntities;
@@ -51,6 +52,8 @@ public class RecollectionMod {
 		RecollectionModEntities.REGISTRY.register(bus);
 
 		RecollectionModTabs.REGISTRY.register(bus);
+
+		RecollectionModMobEffects.REGISTRY.register(bus);
 
 		RecollectionModParticleTypes.REGISTRY.register(bus);
 
