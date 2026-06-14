@@ -16,7 +16,7 @@ public class SteveOnEntityTickUpdateProcedure {
 			if (!entity.level().isClientSide())
 				entity.discard();
 		}
-		if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 100, 100, 100), e -> true).isEmpty()) {
+		if (!world.getEntitiesOfClass(Player.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(100 / 2d), e -> true).isEmpty()) {
 			entity.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3(x, y, z));
 			if (Math.random() > 0.5) {
 				entity.setCustomName(Component.literal("\u20B4\u20AE\u0246V\u0246"));

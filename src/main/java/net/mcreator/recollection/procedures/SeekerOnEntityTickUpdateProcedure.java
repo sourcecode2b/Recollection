@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class SeekerOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 25, 25, 25), e -> true).isEmpty()) {
+		if (!world.getEntitiesOfClass(Player.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, y, z)).inflate(25 / 2d), e -> true).isEmpty()) {
 			if (world instanceof ServerLevel _level)
 				_level.setDayTime(16000);
 		}
